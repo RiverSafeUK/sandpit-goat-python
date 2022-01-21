@@ -31,5 +31,8 @@ jobs:
         run: echo Initialiazing for Eze
 
       # Runs a set of commands using the runners shell
+#       - name: Running Eze
+#         uses: mgonzales-rs/docker-action@main
+        
       - name: Running Eze
-        uses: mgonzales-rs/docker-action@main
+        uses: RiverSafeUK/eze-docker-action@main
