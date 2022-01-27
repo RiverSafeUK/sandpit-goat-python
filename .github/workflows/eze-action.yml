@@ -12,7 +12,7 @@ jobs:
       security-events: write
     name: Eze Security Test
     steps:
-      - name: "Generating SARIF with EZE"
+      - name: "Run Eze action and receive report results"
         uses: RiverSafeUK/eze-docker-action@main
         id: eze-test
       - name: Write sarif to workspace file.
