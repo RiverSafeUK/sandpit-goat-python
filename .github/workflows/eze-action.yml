@@ -12,8 +12,6 @@ jobs:
       security-events: write
     name: Eze Security Test
     steps:
-      - name: Checkout repository code
-        uses: actions/checkout@v2
       - name: "Generating SARIF with EZE"
         uses: RiverSafeUK/eze-docker-action@main
         id: eze-test
