@@ -8,6 +8,7 @@ jobs:
   eze-test:
     runs-on: ubuntu-latest
     permissions:
+      actions: read
       security-events: write
     name: Eze Security Test
     steps:
