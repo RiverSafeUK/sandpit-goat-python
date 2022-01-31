@@ -10,8 +10,8 @@ Branch tested: main
 
 ![critical](https://img.shields.io/static/v1?style=plastic&label=critical&message=0&color=red)
 ![high](https://img.shields.io/static/v1?style=plastic&label=high&message=3&color=orange)
-![medium](https://img.shields.io/static/v1?style=plastic&label=medium&message=7&color=yellow)
-![low](https://img.shields.io/static/v1?style=plastic&label=low&message=2&color=lightgrey)
+![medium](https://img.shields.io/static/v1?style=plastic&label=medium&message=8&color=yellow)
+![low](https://img.shields.io/static/v1?style=plastic&label=low&message=3&color=lightgrey)
             
 
 ## Vulnerabilities
@@ -35,7 +35,7 @@ Branch tested: main
 
     [python-safety] Vulnerabilities
     =================================
-    TOOL REPORT: [github] python-safety (scan duration: 4.4 seconds)
+    TOOL REPORT: [github] python-safety (scan duration: 5.8 seconds)
         total: 3 (medium:3, warnings:true)
         ignored: 9 (low:1, na:8, warnings:true)
 
@@ -95,7 +95,7 @@ https://github.com/pypa/pip/issues/9827
 
     [python-cyclonedx] Vulnerabilities
     =================================
-    TOOL REPORT: [github] python-cyclonedx (scan duration: 7.1 seconds)
+    TOOL REPORT: [github] python-cyclonedx (scan duration: 6.6 seconds)
         components: 2 (License :: OSI Approved :: MIT License:1, License :: OSI Approved :: Apache Software License:1)
         total: 6 (high:2, medium:3, low:1, warnings:true)
         ignored: 0 
@@ -139,14 +139,24 @@ https://github.com/pypa/pip/issues/9827
 
     [trufflehog] Vulnerabilities
     =================================
-    TOOL REPORT: [github] trufflehog (scan duration: 0.4 seconds)
-        total: 2 (medium:1, low:1)
+    TOOL REPORT: [github] trufflehog (scan duration: 0.3 seconds)
+        total: 4 (medium:2, low:2)
         ignored: 0 
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.md
+        recommendation: Investigate 'eze.md' Line 148 for 'High Entropy' strings Full Match:         recommendation: Investigate 'src/super-insecure-lib.py' Line 3 for 'High Entropy' strings Full Match: INSECURE_SECRET_RSA_KEY = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR"
+        file: eze.md (line 148)
 
         [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
         overview: Found Hardcoded 'High Entropy' Pattern in src/super-insecure-lib.py
         recommendation: Investigate 'src/super-insecure-lib.py' Line 3 for 'High Entropy' strings Full Match: INSECURE_SECRET_RSA_KEY = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR"
         file: src/super-insecure-lib.py (line 3)
+
+        [LOW SECRET] : Found Hardcoded 'Password in URL' Pattern
+        overview: Found Hardcoded 'Password in URL' Pattern in eze.md
+        recommendation: Investigate 'eze.md' Line 153 for 'Password in URL' strings Full Match:         recommendation: Investigate 'src/super-insecure-lib.py' Line 5 for 'Password in URL' strings Full Match: INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = "https://admin:god@hackers.com"
+        file: eze.md (line 153)
 
         [LOW SECRET] : Found Hardcoded 'Password in URL' Pattern
         overview: Found Hardcoded 'Password in URL' Pattern in src/super-insecure-lib.py
