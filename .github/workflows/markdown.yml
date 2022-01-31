@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repository code
         uses: actions/checkout@v2
       - name: "Testing with Eze - markdown"
-        uses: RiverSafeUK/eze-docker-action@develop
+        uses: RiverSafeUK/eze-docker-action@feature/ab-967-create-action
         with: 
           upload_method: markdown
         id: eze-test
