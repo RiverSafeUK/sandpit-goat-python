@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository code
         uses: actions/checkout@v2
       - name: "Testing with Eze - sarif"
-        uses: ./
+        uses: RiverSafeUK/eze-docker-action@main
         with: 
           # Define the value of the upload format (sarif or markdown)
           upload_method: sarif
