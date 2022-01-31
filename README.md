@@ -2,6 +2,6 @@
 
 # Introduction 
 
-Eze Python Goat this is a insecure project, designed to find problems in
+Eze Sanpith Python Goat is a insecure project, designed to find vulnerabilities in the code with Eze Github action
 
 To act as a positive case detection test harness
