@@ -5,9 +5,6 @@ on:
     branches: 
       - main
       - develop
-  pull_request: 
-    branches: 
-      - main
 
 jobs:
   eze-test:
@@ -19,7 +16,7 @@ jobs:
       - name: Checkout repository code
         uses: actions/checkout@v2
       - name: "Testing with Eze - markdown"
-        uses: RiverSafeUK/eze-docker-action@feature/ab-967-create-action
+        uses: RiverSafeUK/eze-docker-action@main
         with: 
           upload_method: markdown
         id: eze-test
