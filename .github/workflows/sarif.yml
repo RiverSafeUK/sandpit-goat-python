@@ -1,4 +1,4 @@
-name: Eze Github Actions
+name: Eze Github Actions for Sarif
 
 on:
   push: {branches: main}
@@ -8,12 +8,16 @@ jobs:
   eze-test:
     runs-on: ubuntu-latest
     permissions:
-      actions: read
       security-events: write
     name: Eze Security Test
     steps:
-      - name: "Run Eze action and receive report results"
-        uses: RiverSafeUK/eze-docker-action@main
+      - name: Checkout repository code
+        uses: actions/checkout@v2
+      - name: "Testing with Eze - sarif"
+        uses: ./
+        with: 
+          # Define the value of the upload format (sarif or markdown)
+          upload_method: sarif
         id: eze-test
       - name: Write sarif to workspace file.
         run: |
