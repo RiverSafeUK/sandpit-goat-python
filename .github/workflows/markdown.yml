@@ -33,7 +33,7 @@ jobs:
           git config --local user.name "github-actions[bot]" && \
           git commit -m "Update security report" -a || \
           echo No diff
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: ${{ github.ref }}
+#       - name: Push changes
+#         uses: ad-m/github-push-action@master
+#         with:
+#           branch: ${{ github.ref }}
