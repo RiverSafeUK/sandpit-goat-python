@@ -20,11 +20,11 @@ jobs:
           # Define the value of the upload format (sarif or markdown)
           upload_method: sarif
         id: eze-test
-      # - name: Write sarif to workspace file.
-      #   run: |
-      #     cat > eze.sarif <<'EOF'
-      #       ${{ steps.eze-test.outputs.sarif_file }}
-      #     EOF
+      - name: Write sarif to workspace file.
+        run: |
+          cat > eze.sarif <<'EOF'
+            ${{ steps.eze-test.outputs.sarif_file }}
+          EOF
       - name: Upload SARIF report
         uses: github/codeql-action/upload-sarif@v1
         with:
