@@ -8,7 +8,7 @@
 
 ![critical](https://img.shields.io/static/v1?style=plastic&label=critical&message=0&color=red)
 ![high](https://img.shields.io/static/v1?style=plastic&label=high&message=4&color=orange)
-![medium](https://img.shields.io/static/v1?style=plastic&label=medium&message=59&color=yellow)
+![medium](https://img.shields.io/static/v1?style=plastic&label=medium&message=53&color=yellow)
 ![low](https://img.shields.io/static/v1?style=plastic&label=low&message=6&color=lightgrey)
             
 <b>Branch tested: </b>main
@@ -79,7 +79,7 @@
 
     [python-safety] Vulnerabilities
     =================================
-    TOOL REPORT: [github] python-safety (scan duration: 5.3 seconds)
+    TOOL REPORT: [github] python-safety (scan duration: 4.6 seconds)
         total: 6 (medium:6, warnings:true)
         ignored: 18 (low:2, na:16, warnings:true)
 
@@ -192,7 +192,7 @@ https://github.com/pypa/pip/issues/9827
 
     [python-cyclonedx] Vulnerabilities
     =================================
-    TOOL REPORT: [github] python-cyclonedx (scan duration: 4.6 seconds)
+    TOOL REPORT: [github] python-cyclonedx (scan duration: 3.5 seconds)
         requirements.txt components: 2 (License :: OSI Approved :: MIT License:1, License :: OSI Approved :: Apache Software License:1)
         requirements-dev.txt components: 3 (License :: OSI Approved :: MIT License:3)
         total: 6 (high:2, medium:3, low:1, warnings:true)
@@ -243,74 +243,9 @@ https://github.com/pypa/pip/issues/9827
 
     [trufflehog] Vulnerabilities
     =================================
-    TOOL REPORT: [github] trufflehog (scan duration: 0.5 seconds)
-        total: 51 (medium:46, low:5)
+    TOOL REPORT: [github] trufflehog (scan duration: 0.6 seconds)
+        total: 45 (medium:40, low:5)
         ignored: 0 
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2425 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp\n0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7\net/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strings Full Match\n: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfar\nHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoP\ncxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\"\n"
-        file: eze.sarif (line 2425)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2445 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EA\nAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1\nziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strin\ngs Full Match: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvyS\nmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuO\nL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@\nhackers.com\"\n"
-        file: eze.sarif (line 2445)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2405 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications associated wit\nh the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAA\nAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x\n+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
-        file: eze.sarif (line 2405)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2425 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp\n0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7\net/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strings Full Match\n: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfar\nHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoP\ncxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\"\n"
-        file: eze.sarif (line 2425)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2140 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+\ndLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sU\nsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfblu\noPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'', in .\\insecure\\src\\super-insec\nure-lib.py"
-        file: eze.sarif (line 2140)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
-        file: eze.sarif (line 2153)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
-        file: eze.sarif (line 2153)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
-        file: eze.sarif (line 2153)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2143 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1189 characters)>
-        file: eze.sarif (line 2143)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2143 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1189 characters)>
-        file: eze.sarif (line 2143)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2123 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Consider possible security implications associated with the subprocess module.', in .\\insecure\\src\\super-insecure-\nlib.py Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications assoc\niated with the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa \nAAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUw\nYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGF\nqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
-        file: eze.sarif (line 2123)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2385 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications associated with the subproc\ness module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG4\n2y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5G\nwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
-        file: eze.sarif (line 2385)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2445 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EA\nAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1\nziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strin\ngs Full Match: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvyS\nmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuO\nL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@\nhackers.com\"\n"
-        file: eze.sarif (line 2445)
 
         [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
         overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
@@ -324,13 +259,143 @@ https://github.com/pypa/pip/issues/9827
 
         [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
         overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2150 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+\ndLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sU\nsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfblu\noPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'', in .\\unpinned-requirements\\sr\nc\\super-insecure-lib.py"
-        file: eze.sarif (line 2150)
+        recommendation: Investigate 'eze.sarif' Line 2445 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EA\nAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1\nziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strin\ngs Full Match: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvyS\nmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuO\nL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@\nhackers.com\"\n"
+        file: eze.sarif (line 2445)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2123 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Consider possible security implications associated with the subprocess module.', in .\\insecure\\src\\super-insecure-\nlib.py Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications assoc\niated with the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa \nAAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUw\nYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGF\nqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
+        file: eze.sarif (line 2123)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2143 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1189 characters)>
+        file: eze.sarif (line 2143)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
+        file: eze.sarif (line 2153)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2425 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp\n0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7\net/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strings Full Match\n: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfar\nHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoP\ncxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\"\n"
+        file: eze.sarif (line 2425)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2133 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Consider possible security implications associated with the subprocess module.', in .\\unpinned-requirements\\src\\su\nper-insecure-lib.py Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 1 for 'Consider possible s\necurity implications associated with the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_\nSECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarH\njpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTu\nOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
+        file: eze.sarif (line 2133)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
+        file: eze.sarif (line 2153)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
+        file: eze.sarif (line 2153)
 
         [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
         overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
         recommendation: Investigate 'eze.sarif' Line 2445 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EA\nAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1\nziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strin\ngs Full Match: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvyS\nmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuO\nL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@\nhackers.com\"\n"
         file: eze.sarif (line 2445)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2143 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1189 characters)>
+        file: eze.sarif (line 2143)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2425 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp\n0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7\net/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strings Full Match\n: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfar\nHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoP\ncxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\"\n"
+        file: eze.sarif (line 2425)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2445 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EA\nAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1\nziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strin\ngs Full Match: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvyS\nmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuO\nL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@\nhackers.com\"\n"
+        file: eze.sarif (line 2445)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2143 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1189 characters)>
+        file: eze.sarif (line 2143)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2405 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications associated wit\nh the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAA\nAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x\n+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
+        file: eze.sarif (line 2405)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
+        file: eze.sarif (line 2153)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2148 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:               "name": "Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'",
+        file: eze.sarif (line 2148)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
+        file: eze.sarif (line 2153)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2425 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp\n0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7\net/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strings Full Match\n: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfar\nHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoP\ncxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\"\n"
+        file: eze.sarif (line 2425)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2425 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp\n0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7\net/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strings Full Match\n: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfar\nHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoP\ncxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\"\n"
+        file: eze.sarif (line 2425)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2445 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EA\nAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1\nziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strin\ngs Full Match: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvyS\nmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuO\nL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@\nhackers.com\"\n"
+        file: eze.sarif (line 2445)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
+        file: eze.sarif (line 2153)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2445 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EA\nAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1\nziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strin\ngs Full Match: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvyS\nmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuO\nL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@\nhackers.com\"\n"
+        file: eze.sarif (line 2445)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2405 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications associated wit\nh the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAA\nAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x\n+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
+        file: eze.sarif (line 2405)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2123 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Consider possible security implications associated with the subprocess module.', in .\\insecure\\src\\super-insecure-\nlib.py Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications assoc\niated with the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa \nAAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUw\nYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGF\nqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
+        file: eze.sarif (line 2123)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2385 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications associated with the subproc\ness module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG4\n2y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5G\nwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
+        file: eze.sarif (line 2385)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
+        file: eze.sarif (line 2153)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
+        file: eze.sarif (line 2153)
+
+        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
+        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2385 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications associated with the subproc\ness module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG4\n2y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5G\nwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
+        file: eze.sarif (line 2385)
 
         [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
         overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
@@ -349,76 +414,6 @@ https://github.com/pypa/pip/issues/9827
 
         [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
         overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2150 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+\ndLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sU\nsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfblu\noPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'', in .\\unpinned-requirements\\sr\nc\\super-insecure-lib.py"
-        file: eze.sarif (line 2150)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2133 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Consider possible security implications associated with the subprocess module.', in .\\unpinned-requirements\\src\\su\nper-insecure-lib.py Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 1 for 'Consider possible s\necurity implications associated with the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_\nSECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarH\njpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTu\nOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
-        file: eze.sarif (line 2133)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2133 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Consider possible security implications associated with the subprocess module.', in .\\unpinned-requirements\\src\\su\nper-insecure-lib.py Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 1 for 'Consider possible s\necurity implications associated with the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_\nSECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarH\njpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTu\nOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
-        file: eze.sarif (line 2133)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
-        file: eze.sarif (line 2153)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2405 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications associated wit\nh the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAA\nAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x\n+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
-        file: eze.sarif (line 2405)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
-        file: eze.sarif (line 2153)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2425 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp\n0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7\net/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strings Full Match\n: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfar\nHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoP\ncxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\"\n"
-        file: eze.sarif (line 2425)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2425 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp\n0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7\net/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strings Full Match\n: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfar\nHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoP\ncxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\"\n"
-        file: eze.sarif (line 2425)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
-        file: eze.sarif (line 2153)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2445 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EA\nAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1\nziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strin\ngs Full Match: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvyS\nmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuO\nL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@\nhackers.com\"\n"
-        file: eze.sarif (line 2445)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
-        file: eze.sarif (line 2153)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2143 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1189 characters)>
-        file: eze.sarif (line 2143)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2143 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1189 characters)>
-        file: eze.sarif (line 2143)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2148 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:               "name": "Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'",
-        file: eze.sarif (line 2148)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
         recommendation: Investigate 'eze.sarif' Line 2123 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Consider possible security implications associated with the subprocess module.', in .\\insecure\\src\\super-insecure-\nlib.py Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications assoc\niated with the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa \nAAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUw\nYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGF\nqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
         file: eze.sarif (line 2123)
 
@@ -434,53 +429,23 @@ https://github.com/pypa/pip/issues/9827
 
         [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
         overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2445 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EA\nAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1\nziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strin\ngs Full Match: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvyS\nmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuO\nL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@\nhackers.com\"\n"
-        file: eze.sarif (line 2445)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2140 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+\ndLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sU\nsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfblu\noPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'', in .\\insecure\\src\\super-insec\nure-lib.py"
-        file: eze.sarif (line 2140)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
         recommendation: Investigate 'eze.sarif' Line 2143 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1189 characters)>
         file: eze.sarif (line 2143)
 
         [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
         overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2153 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
-        file: eze.sarif (line 2153)
+        recommendation: Investigate 'eze.sarif' Line 2133 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Consider possible security implications associated with the subprocess module.', in .\\unpinned-requirements\\src\\su\nper-insecure-lib.py Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 1 for 'Consider possible s\necurity implications associated with the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_\nSECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarH\njpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTu\nOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
+        file: eze.sarif (line 2133)
 
         [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
         overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2385 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications associated with the subproc\ness module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG4\n2y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5G\nwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
-        file: eze.sarif (line 2385)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2140 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+\ndLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sU\nsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfblu\noPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'', in .\\insecure\\src\\super-insec\nure-lib.py"
-        file: eze.sarif (line 2140)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2150 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+\ndLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sU\nsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfblu\noPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'', in .\\unpinned-requirements\\sr\nc\\super-insecure-lib.py"
-        file: eze.sarif (line 2150)
-
-        [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
-        overview: Found Hardcoded 'High Entropy' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2123 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match:                 "text": "'Consider possible security implications associated with the subprocess module.', in .\\insecure\\src\\super-insecure-\nlib.py Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications assoc\niated with the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa \nAAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUw\nYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGF\nqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
-        file: eze.sarif (line 2123)
+        recommendation: Investigate 'eze.sarif' Line 2143 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1189 characters)>
+        file: eze.sarif (line 2143)
 
         [MEDIUM SECRET] : Found Hardcoded 'High Entropy' Pattern
         overview: Found Hardcoded 'High Entropy' Pattern in src/super-insecure-lib.py
         recommendation: Investigate 'src/super-insecure-lib.py' Line 3 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: INSECURE_SECRET_RSA_KEY = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR"
         file: src/super-insecure-lib.py (line 3)
-
-        [LOW SECRET] : Found Hardcoded 'Password in URL' Pattern
-        overview: Found Hardcoded 'Password in URL' Pattern in eze.sarif
-        recommendation: Investigate 'eze.sarif' Line 2153 for 'Password in URL' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
-        file: eze.sarif (line 2153)
 
         [LOW SECRET] : Found Hardcoded 'Password in URL' Pattern
         overview: Found Hardcoded 'Password in URL' Pattern in eze.sarif
@@ -491,6 +456,11 @@ https://github.com/pypa/pip/issues/9827
         overview: Found Hardcoded 'Password in URL' Pattern in eze.sarif
         recommendation: Investigate 'eze.sarif' Line 2425 for 'Password in URL' strings (add '# nosecret' to line if false positive) Full Match:             "text": "Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp\n0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7\net/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strings Full Match\n: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfar\nHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoP\ncxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\"\n"
         file: eze.sarif (line 2425)
+
+        [LOW SECRET] : Found Hardcoded 'Password in URL' Pattern
+        overview: Found Hardcoded 'Password in URL' Pattern in eze.sarif
+        recommendation: Investigate 'eze.sarif' Line 2153 for 'Password in URL' strings (add '# nosecret' to line if false positive) Full Match: <on long line (1217 characters)>
+        file: eze.sarif (line 2153)
 
         [LOW SECRET] : Found Hardcoded 'Password in URL' Pattern
         overview: Found Hardcoded 'Password in URL' Pattern in eze.sarif
