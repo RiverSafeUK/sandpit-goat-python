@@ -11,40 +11,40 @@
           "informationUri": "https://pypi.org/project/truffleHog3/",
           "rules": [
             {
-              "id": "c3f450df-8072-4516-8e31-4e6866cbdcf3",
+              "id": "4761fce9-cea0-4166-8b30-0b7732a62f4b",
               "name": "Found Hardcoded 'High Entropy' Pattern",
               "shortDescription": {
-                "text": "Found Hardcoded 'High Entropy' Pattern in insecure/src/super-insecure-lib.py"
+                "text": "Found Hardcoded 'High Entropy' Pattern in insecure/src/super-insecure-"
               },
               "fullDescription": {
                 "text": "Found Hardcoded 'High Entropy' Pattern in insecure/src/super-insecure-lib.py Investigate 'insecure/src/super-insecu\nre-lib.py' Line 3 for 'High Entropy' strings (add '# nosecret' to line if false positive) Full Match: INSECURE_SECR\nET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKc\nW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7l\nYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\""
               }
             },
             {
-              "id": "68efeca7-a65b-43c0-bd00-813b50422197",
+              "id": "7566991b-97ce-40e4-9db6-12720c57b806",
               "name": "Found Hardcoded 'High Entropy' Pattern",
               "shortDescription": {
-                "text": "Found Hardcoded 'High Entropy' Pattern in unpinned-requirements/src/super-insecure-li\nb.py"
+                "text": "Found Hardcoded 'High Entropy' Pattern in unpinned-requirements/src/su"
               },
               "fullDescription": {
                 "text": "Found Hardcoded 'High Entropy' Pattern in unpinned-requirements/src/super-insecure-lib.py Investigate 'unpinned-req\nuirements/src/super-insecure-lib.py' Line 3 for 'High Entropy' strings (add '# nosecret' to line if false positive)\n Full Match: INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv\n0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapa\nTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\""
               }
             },
             {
-              "id": "7716ee75-0e09-4bd3-87f7-87b5db5ab4b9",
+              "id": "e89bc2e1-4638-4185-b7d2-d34fcca14d7a",
               "name": "Found Hardcoded 'Password in URL' Pattern",
               "shortDescription": {
-                "text": "Found Hardcoded 'Password in URL' Pattern in insecure/src/super-insecure-lib.py"
+                "text": "Found Hardcoded 'Password in URL' Pattern in insecure/src/super-insecu"
               },
               "fullDescription": {
                 "text": "Found Hardcoded 'Password in URL' Pattern in insecure/src/super-insecure-lib.py Investigate 'insecure/src/super-ins\necure-lib.py' Line 5 for 'Password in URL' strings (add '# nosecret' to line if false positive) Full Match: INSECUR\nE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\""
               }
             },
             {
-              "id": "2a442b82-82da-44f2-ac46-25f892b53eb1",
+              "id": "d2ab57fb-64e8-455d-a3db-e9c3872b5c20",
               "name": "Found Hardcoded 'Password in URL' Pattern",
               "shortDescription": {
-                "text": "Found Hardcoded 'Password in URL' Pattern in unpinned-requirements/src/super-insecure\n-lib.py"
+                "text": "Found Hardcoded 'Password in URL' Pattern in unpinned-requirements/src"
               },
               "fullDescription": {
                 "text": "Found Hardcoded 'Password in URL' Pattern in unpinned-requirements/src/super-insecure-lib.py Investigate 'unpinned-\nrequirements/src/super-insecure-lib.py' Line 5 for 'Password in URL' strings (add '# nosecret' to line if false pos\nitive) Full Match: INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\""
@@ -55,7 +55,7 @@
       },
       "results": [
         {
-          "ruleId": "c3f450df-8072-4516-8e31-4e6866cbdcf3",
+          "ruleId": "4761fce9-cea0-4166-8b30-0b7732a62f4b",
           "ruleIndex": 0,
           "level": "error",
           "message": {
@@ -75,7 +75,7 @@
           ]
         },
         {
-          "ruleId": "68efeca7-a65b-43c0-bd00-813b50422197",
+          "ruleId": "7566991b-97ce-40e4-9db6-12720c57b806",
           "ruleIndex": 1,
           "level": "error",
           "message": {
@@ -95,7 +95,7 @@
           ]
         },
         {
-          "ruleId": "7716ee75-0e09-4bd3-87f7-87b5db5ab4b9",
+          "ruleId": "e89bc2e1-4638-4185-b7d2-d34fcca14d7a",
           "ruleIndex": 2,
           "level": "warning",
           "message": {
@@ -115,7 +115,7 @@
           ]
         },
         {
-          "ruleId": "2a442b82-82da-44f2-ac46-25f892b53eb1",
+          "ruleId": "d2ab57fb-64e8-455d-a3db-e9c3872b5c20",
           "ruleIndex": 3,
           "level": "warning",
           "message": {
@@ -159,330 +159,330 @@
           "informationUri": "https://pypi.org/project/safety/",
           "rules": [
             {
-              "id": "f42a6bac-430a-4261-87f3-b5c074a8f9a4",
+              "id": "5419aa95-aee9-4e93-bf60-7336e5c4b7ba",
               "name": "pip",
               "shortDescription": {
-                "text": "Pip 21.1 updates its dependency 'urllib3' to v1.26.4 due to security issues."
+                "text": "Pip 21.1 updates its dependency 'urllib3' to v1.26.4 due to security i"
               },
               "fullDescription": {
                 "text": "Pip 21.1 updates its dependency 'urllib3' to v1.26.4 due to security issues. Update pip (1.3.0) to a non vulnerable\n version, vulnerable versions: <21.1"
               }
             },
             {
-              "id": "06413e5a-b974-46c7-8ea9-b2871065cf50",
+              "id": "fa85ff43-69e9-43cf-9fd1-f18ed1353470",
               "name": "pip",
               "shortDescription": {
-                "text": "Pip 21.1 updates its dependency 'urllib3' to v1.26.4 due to security issues."
+                "text": "Pip 21.1 updates its dependency 'urllib3' to v1.26.4 due to security i"
               },
               "fullDescription": {
                 "text": "Pip 21.1 updates its dependency 'urllib3' to v1.26.4 due to security issues. Update pip (1.3.0) to a non vulnerable\n version, vulnerable versions: <21.1"
               }
             },
             {
-              "id": "6ceee9dc-57bc-402f-88f1-37e8498ea2b4",
+              "id": "f6437309-1f93-483e-add6-7a41f390d68b",
               "name": "pip",
               "shortDescription": {
-                "text": "Pip 21.1 updates its dependency 'urllib3' to v1.26.4 due to security issues."
+                "text": "Pip 21.1 updates its dependency 'urllib3' to v1.26.4 due to security i"
               },
               "fullDescription": {
                 "text": "Pip 21.1 updates its dependency 'urllib3' to v1.26.4 due to security issues. Update pip (1.3.0) to a non vulnerable\n version, vulnerable versions: <21.1"
               }
             },
             {
-              "id": "ee93252e-024e-4ee9-a5d8-9ca25d5ecb08",
+              "id": "80db7b15-5fe3-4dab-8012-6fc80fb0ee0f",
               "name": "pip",
               "shortDescription": {
-                "text": "Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in python-pip in \nthe way it handled Unicode separators in git references. A remote attacker could poss\nibly use this issue to install a different revision on a repository. The highest thre\nat from this vulnerability is to data integrity.\r\nhttps://bugzilla.redhat.com/show_bu\ng.cgi?id=1962856"
+                "text": "Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in"
               },
               "fullDescription": {
                 "text": "Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in python-pip in the way it handled Unicode sep\narators in git references. A remote attacker could possibly use this issue to install a different revision on a rep\nository. The highest threat from this vulnerability is to data integrity.\r\nhttps://bugzilla.redhat.com/show_bug.cgi\n?id=1962856 Update pip (1.3.0) to a non vulnerable version, vulnerable versions: <21.1"
               }
             },
             {
-              "id": "2db371ff-1941-49f1-baa4-6ff2083b3b42",
+              "id": "89c7b29b-0c4f-4b57-a49a-ac572de81f0c",
               "name": "pip",
               "shortDescription": {
-                "text": "Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in python-pip in \nthe way it handled Unicode separators in git references. A remote attacker could poss\nibly use this issue to install a different revision on a repository. The highest thre\nat from this vulnerability is to data integrity.\r\nhttps://bugzilla.redhat.com/show_bu\ng.cgi?id=1962856"
+                "text": "Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in"
               },
               "fullDescription": {
                 "text": "Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in python-pip in the way it handled Unicode sep\narators in git references. A remote attacker could possibly use this issue to install a different revision on a rep\nository. The highest threat from this vulnerability is to data integrity.\r\nhttps://bugzilla.redhat.com/show_bug.cgi\n?id=1962856 Update pip (1.3.0) to a non vulnerable version, vulnerable versions: <21.1"
               }
             },
             {
-              "id": "3dec6045-e10d-4f47-9314-e57a9c57dcf0",
+              "id": "fe724f78-f71f-4c80-9c31-a6b977b38b54",
               "name": "pip",
               "shortDescription": {
-                "text": "Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in python-pip in \nthe way it handled Unicode separators in git references. A remote attacker could poss\nibly use this issue to install a different revision on a repository. The highest thre\nat from this vulnerability is to data integrity.\r\nhttps://bugzilla.redhat.com/show_bu\ng.cgi?id=1962856"
+                "text": "Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in"
               },
               "fullDescription": {
                 "text": "Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in python-pip in the way it handled Unicode sep\narators in git references. A remote attacker could possibly use this issue to install a different revision on a rep\nository. The highest threat from this vulnerability is to data integrity.\r\nhttps://bugzilla.redhat.com/show_bug.cgi\n?id=1962856 Update pip (1.3.0) to a non vulnerable version, vulnerable versions: <21.1"
               }
             },
             {
-              "id": "5544d82a-4f58-4b54-bd63-54612c2458b7",
+              "id": "418a0239-f6e3-4234-9f01-afa599a5b5c7",
               "name": "pip",
               "shortDescription": {
-                "text": "Pip version 21.1 stops splitting on unicode separators in git references, which could\n be maliciously used to install a different revision on the repository. \r\nhttps://git\nhub.com/pypa/pip/issues/9827"
+                "text": "Pip version 21.1 stops splitting on unicode separators in git referenc"
               },
               "fullDescription": {
                 "text": "Pip version 21.1 stops splitting on unicode separators in git references, which could be maliciously used to instal\nl a different revision on the repository. \r\nhttps://github.com/pypa/pip/issues/9827 Update pip (1.3.0) to a non vul\nnerable version, vulnerable versions: <21.1"
               }
             },
             {
-              "id": "6a4e57e1-a723-478e-a228-577edf423391",
+              "id": "b85b0dd0-f070-40fb-9ecc-9ed811d7cf4b",
               "name": "pip",
               "shortDescription": {
-                "text": "Pip version 21.1 stops splitting on unicode separators in git references, which could\n be maliciously used to install a different revision on the repository. \r\nhttps://git\nhub.com/pypa/pip/issues/9827"
+                "text": "Pip version 21.1 stops splitting on unicode separators in git referenc"
               },
               "fullDescription": {
                 "text": "Pip version 21.1 stops splitting on unicode separators in git references, which could be maliciously used to instal\nl a different revision on the repository. \r\nhttps://github.com/pypa/pip/issues/9827 Update pip (1.3.0) to a non vul\nnerable version, vulnerable versions: <21.1"
               }
             },
             {
-              "id": "da3eb148-c7b7-4856-aae0-addb059b71be",
+              "id": "a0d93cf5-841a-43b9-822a-8aa6d660fa16",
               "name": "pip",
               "shortDescription": {
-                "text": "Pip version 21.1 stops splitting on unicode separators in git references, which could\n be maliciously used to install a different revision on the repository. \r\nhttps://git\nhub.com/pypa/pip/issues/9827"
+                "text": "Pip version 21.1 stops splitting on unicode separators in git referenc"
               },
               "fullDescription": {
                 "text": "Pip version 21.1 stops splitting on unicode separators in git references, which could be maliciously used to instal\nl a different revision on the repository. \r\nhttps://github.com/pypa/pip/issues/9827 Update pip (1.3.0) to a non vul\nnerable version, vulnerable versions: <21.1"
               }
             },
             {
-              "id": "2dadd43c-358d-4edf-8c5d-8876bac763bd",
+              "id": "9a4f6026-ab7f-4fa3-b12d-1e8697e8dfb2",
               "name": "pip",
               "shortDescription": {
-                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS \nquerying and authenticity checks which allows attackers to perform man-in-the-middle \nattacks. See CVE-2013-5123."
+                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 use"
               },
               "fullDescription": {
                 "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS querying and authenticity chec\nks which allows attackers to perform man-in-the-middle attacks. See CVE-2013-5123. Update pip (1.3.0) to a non vuln\nerable version, vulnerable versions: <1.5"
               }
             },
             {
-              "id": "ea3a502f-a18d-450d-be1e-46bc7e50b178",
+              "id": "f095bc29-9346-437c-a166-bd33b7a0408c",
               "name": "pip",
               "shortDescription": {
-                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS \nquerying and authenticity checks which allows attackers to perform man-in-the-middle \nattacks. See CVE-2013-5123."
+                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 use"
               },
               "fullDescription": {
                 "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS querying and authenticity chec\nks which allows attackers to perform man-in-the-middle attacks. See CVE-2013-5123. Update pip (1.3.0) to a non vuln\nerable version, vulnerable versions: <1.5"
               }
             },
             {
-              "id": "631f9923-b27d-42e5-9c9e-eee9ca3c5454",
+              "id": "1058c5cc-1c1c-4ca3-bbe6-709f4c2e5084",
               "name": "pip",
               "shortDescription": {
-                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS \nquerying and authenticity checks which allows attackers to perform man-in-the-middle \nattacks. See CVE-2013-5123."
+                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 use"
               },
               "fullDescription": {
                 "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS querying and authenticity chec\nks which allows attackers to perform man-in-the-middle attacks. See CVE-2013-5123. Update pip (1.3.0) to a non vuln\nerable version, vulnerable versions: <1.5"
               }
             },
             {
-              "id": "99f4ee5b-31cf-4c90-905d-d44297206fc0",
+              "id": "ccbd0784-7693-4ca4-a416-70244b8c6b6c",
               "name": "pip",
               "shortDescription": {
-                "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given\n in an install command, because a Content-Disposition header can have ../ in a filena\nme, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs i\nn _download_http_url in _internal/download.py."
+                "text": "The pip package before 19.2 for Python allows Directory Traversal when"
               },
               "fullDescription": {
                 "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, becaus\ne a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized\n_keys file. This occurs in _download_http_url in _internal/download.py. Update pip (1.3.0) to a non vulnerable vers\nion, vulnerable versions: <19.2"
               }
             },
             {
-              "id": "60591346-3bbc-4cb6-bc49-b5d005a2ded5",
+              "id": "5801b407-b49b-43fc-98d5-b4ec8a606cdb",
               "name": "pip",
               "shortDescription": {
-                "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given\n in an install command, because a Content-Disposition header can have ../ in a filena\nme, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs i\nn _download_http_url in _internal/download.py."
+                "text": "The pip package before 19.2 for Python allows Directory Traversal when"
               },
               "fullDescription": {
                 "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, becaus\ne a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized\n_keys file. This occurs in _download_http_url in _internal/download.py. Update pip (1.3.0) to a non vulnerable vers\nion, vulnerable versions: <19.2"
               }
             },
             {
-              "id": "2e56e028-a6d8-4cbd-8e8a-1031fd55889f",
+              "id": "72444d68-0493-4e80-bd8c-78b27fd3583f",
               "name": "pip",
               "shortDescription": {
-                "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given\n in an install command, because a Content-Disposition header can have ../ in a filena\nme, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs i\nn _download_http_url in _internal/download.py."
+                "text": "The pip package before 19.2 for Python allows Directory Traversal when"
               },
               "fullDescription": {
                 "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, becaus\ne a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized\n_keys file. This occurs in _download_http_url in _internal/download.py. Update pip (1.3.0) to a non vulnerable vers\nion, vulnerable versions: <19.2"
               }
             },
             {
-              "id": "af3cb752-93ec-4c2e-ac68-f86c3c54ad63",
+              "id": "fe09a351-5b86-4cad-9b39-b269c74f0ade",
               "name": "pip",
               "shortDescription": {
-                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows \nremote attackers to conduct session fixation attacks via a cookie without a host valu\ne in a redirect."
+                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 throug"
               },
               "fullDescription": {
                 "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct se\nssion fixation attacks via a cookie without a host value in a redirect. Update pip (1.3.0) to a non vulnerable vers\nion, vulnerable versions: <6.1.0"
               }
             },
             {
-              "id": "a6d3fce3-1eab-4f84-80fc-26491e1fc6cf",
+              "id": "ae58b324-c331-4862-979a-96b6ed9c37e7",
               "name": "pip",
               "shortDescription": {
-                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows \nremote attackers to conduct session fixation attacks via a cookie without a host valu\ne in a redirect."
+                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 throug"
               },
               "fullDescription": {
                 "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct se\nssion fixation attacks via a cookie without a host value in a redirect. Update pip (1.3.0) to a non vulnerable vers\nion, vulnerable versions: <6.1.0"
               }
             },
             {
-              "id": "4f2436f2-c828-423c-8246-1fd93e525d18",
+              "id": "8ec274d3-8fee-4317-9f01-2e7930798e6f",
               "name": "pip",
               "shortDescription": {
-                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows \nremote attackers to conduct session fixation attacks via a cookie without a host valu\ne in a redirect."
+                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 throug"
               },
               "fullDescription": {
                 "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct se\nssion fixation attacks via a cookie without a host value in a redirect. Update pip (1.3.0) to a non vulnerable vers\nion, vulnerable versions: <6.1.0"
               }
             },
             {
-              "id": "09f30f1f-5b4d-4208-863d-f02d1eaa610c",
+              "id": "0dfb7f52-f5fa-4589-9400-1475c631e0a4",
               "name": "pip",
               "shortDescription": {
-                "text": "pip 1.4 includes a security patch to pip's ssl support related to certificate DNS wil\ndcard matching."
+                "text": "pip 1.4 includes a security patch to pip's ssl support related to cert"
               },
               "fullDescription": {
                 "text": "pip 1.4 includes a security patch to pip's ssl support related to certificate DNS wildcard matching. Update pip (1.\n3.0) to a non vulnerable version, vulnerable versions: <1.4"
               }
             },
             {
-              "id": "dcf66b85-0975-4857-8157-df06686e29ea",
+              "id": "f3eab9af-7ffc-4977-81fa-37a25e57841e",
               "name": "pip",
               "shortDescription": {
-                "text": "pip 1.4 includes a security patch to pip's ssl support related to certificate DNS wil\ndcard matching."
+                "text": "pip 1.4 includes a security patch to pip's ssl support related to cert"
               },
               "fullDescription": {
                 "text": "pip 1.4 includes a security patch to pip's ssl support related to certificate DNS wildcard matching. Update pip (1.\n3.0) to a non vulnerable version, vulnerable versions: <1.4"
               }
             },
             {
-              "id": "bce4ed8d-be7e-431a-b1fa-cb20f558a593",
+              "id": "bd8f54e8-0f81-4a38-9beb-df147766953c",
               "name": "pip",
               "shortDescription": {
-                "text": "pip 1.4 includes a security patch to pip's ssl support related to certificate DNS wil\ndcard matching."
+                "text": "pip 1.4 includes a security patch to pip's ssl support related to cert"
               },
               "fullDescription": {
                 "text": "pip 1.4 includes a security patch to pip's ssl support related to certificate DNS wildcard matching. Update pip (1.\n3.0) to a non vulnerable version, vulnerable versions: <1.4"
               }
             },
             {
-              "id": "7af09845-8b0d-4937-97a5-eb87f34f9281",
+              "id": "0620329f-a9c8-4e38-a935-0b19f132e935",
               "name": "pip",
               "shortDescription": {
-                "text": "pip before 6.0 is not using a randomized and secure default build directory when poss\nible. (CVE-2014-8991)."
+                "text": "pip before 6.0 is not using a randomized and secure default build dire"
               },
               "fullDescription": {
                 "text": "pip before 6.0 is not using a randomized and secure default build directory when possible. (CVE-2014-8991). Update \npip (1.3.0) to a non vulnerable version, vulnerable versions: <6.0"
               }
             },
             {
-              "id": "92c25f3f-385d-4525-b910-e0f55bf4cbab",
+              "id": "715aa6b6-7fe1-4fd7-98ed-29dcfd7f452c",
               "name": "pip",
               "shortDescription": {
-                "text": "pip before 6.0 is not using a randomized and secure default build directory when poss\nible. (CVE-2014-8991)."
+                "text": "pip before 6.0 is not using a randomized and secure default build dire"
               },
               "fullDescription": {
                 "text": "pip before 6.0 is not using a randomized and secure default build directory when possible. (CVE-2014-8991). Update \npip (1.3.0) to a non vulnerable version, vulnerable versions: <6.0"
               }
             },
             {
-              "id": "08441fda-e111-427f-b555-8b05b376ded9",
+              "id": "a7d417fe-d38a-4c0b-9130-419e8c687133",
               "name": "pip",
               "shortDescription": {
-                "text": "pip before 6.0 is not using a randomized and secure default build directory when poss\nible. (CVE-2014-8991)."
+                "text": "pip before 6.0 is not using a randomized and secure default build dire"
               },
               "fullDescription": {
                 "text": "pip before 6.0 is not using a randomized and secure default build directory when possible. (CVE-2014-8991). Update \npip (1.3.0) to a non vulnerable version, vulnerable versions: <6.0"
               }
             },
             {
-              "id": "e706ffee-ea88-4571-b359-9b265ab31e31",
+              "id": "3010ffd3-f215-4d83-b293-c4b096ce2feb",
               "name": "pip",
               "shortDescription": {
-                "text": "pip before 6.1.0 bundles a request release with a known security vulnerability. See  \nCVE-2015-2296."
+                "text": "pip before 6.1.0 bundles a request release with a known security vulne"
               },
               "fullDescription": {
                 "text": "pip before 6.1.0 bundles a request release with a known security vulnerability. See  CVE-2015-2296. Update pip (1.3\n.0) to a non vulnerable version, vulnerable versions: <6.1.0"
               }
             },
             {
-              "id": "a7a5abe4-fbd2-4f54-8f19-7fe8220d8851",
+              "id": "9b0a2a39-8ea8-48bb-907d-94eff75b6e00",
               "name": "pip",
               "shortDescription": {
-                "text": "pip before 6.1.0 bundles a request release with a known security vulnerability. See  \nCVE-2015-2296."
+                "text": "pip before 6.1.0 bundles a request release with a known security vulne"
               },
               "fullDescription": {
                 "text": "pip before 6.1.0 bundles a request release with a known security vulnerability. See  CVE-2015-2296. Update pip (1.3\n.0) to a non vulnerable version, vulnerable versions: <6.1.0"
               }
             },
             {
-              "id": "4e2bb0ff-9db2-414e-b1a9-8029be6a9d5c",
+              "id": "0fee9f66-749c-47d2-b29a-b61f7914b145",
               "name": "pip",
               "shortDescription": {
-                "text": "pip before 6.1.0 bundles a request release with a known security vulnerability. See  \nCVE-2015-2296."
+                "text": "pip before 6.1.0 bundles a request release with a known security vulne"
               },
               "fullDescription": {
                 "text": "pip before 6.1.0 bundles a request release with a known security vulnerability. See  CVE-2015-2296. Update pip (1.3\n.0) to a non vulnerable version, vulnerable versions: <6.1.0"
               }
             },
             {
-              "id": "2893fc82-0cc9-4f29-8a8f-919a7f167d82",
+              "id": "7abc47d3-1c15-4533-8ae5-c8bbcf9435fa",
               "name": "requests",
               "shortDescription": {
-                "text": "The Requests package through 2.19.1 sends an HTTP Authorization header to an http URI\n upon receiving a same-hostname https-to-http redirect, which makes it easier for rem\note attackers to discover credentials by sniffing the network."
+                "text": "The Requests package through 2.19.1 sends an HTTP Authorization header"
               },
               "fullDescription": {
                 "text": "The Requests package through 2.19.1 sends an HTTP Authorization header to an http URI upon receiving a same-hostnam\ne https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the networ\nk. Update requests (2.4.0) to a non vulnerable version, vulnerable versions: <=2.19.1"
               }
             },
             {
-              "id": "fb31ff78-04c2-46ed-a785-8351cc700c35",
+              "id": "2f96a371-3209-4ffb-b9da-edc58861dfcd",
               "name": "requests",
               "shortDescription": {
-                "text": "The Requests package through 2.19.1 sends an HTTP Authorization header to an http URI\n upon receiving a same-hostname https-to-http redirect, which makes it easier for rem\note attackers to discover credentials by sniffing the network."
+                "text": "The Requests package through 2.19.1 sends an HTTP Authorization header"
               },
               "fullDescription": {
                 "text": "The Requests package through 2.19.1 sends an HTTP Authorization header to an http URI upon receiving a same-hostnam\ne https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the networ\nk. Update requests (2.4.0) to a non vulnerable version, vulnerable versions: <=2.19.1"
               }
             },
             {
-              "id": "9b88b769-d8ec-4e9b-bb2b-657b1fe52321",
+              "id": "d2d8501e-b518-432b-a2d3-1ee7138deea0",
               "name": "requests",
               "shortDescription": {
-                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows \nremote attackers to conduct session fixation attacks via a cookie without a host valu\ne in a redirect."
+                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 throug"
               },
               "fullDescription": {
                 "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct se\nssion fixation attacks via a cookie without a host value in a redirect. Update requests (2.4.0) to a non vulnerable\n version, vulnerable versions: >=2.1,<=2.5.3"
               }
             },
             {
-              "id": "26958203-41f5-40c6-8d87-d5c54bcba8cc",
+              "id": "cdbe9da6-47c4-4495-986f-cb6bed5665cf",
               "name": "requests",
               "shortDescription": {
-                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows \nremote attackers to conduct session fixation attacks via a cookie without a host valu\ne in a redirect."
+                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 throug"
               },
               "fullDescription": {
                 "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct se\nssion fixation attacks via a cookie without a host value in a redirect. Update requests (2.4.0) to a non vulnerable\n version, vulnerable versions: >=2.1,<=2.5.3"
               }
             },
             {
-              "id": "30d92870-4fd7-464d-bfa3-7b5dbf031503",
+              "id": "6a52de54-fc82-4d3a-94aa-b7f51cfc9f95",
               "name": "requests",
               "shortDescription": {
-                "text": "requests 2.6.0 fixes handling of cookies on redirect. Previously a cookie without a h\nost value set would use the hostname for the redirected URL exposing requests users t\no session fixation attacks and potentially cookie stealing."
+                "text": "requests 2.6.0 fixes handling of cookies on redirect. Previously a coo"
               },
               "fullDescription": {
                 "text": "requests 2.6.0 fixes handling of cookies on redirect. Previously a cookie without a host value set would use the ho\nstname for the redirected URL exposing requests users to session fixation attacks and potentially cookie stealing. \nUpdate requests (2.4.0) to a non vulnerable version, vulnerable versions: <2.6.0"
               }
             },
             {
-              "id": "bc129450-66e1-4104-afb4-10675b85217b",
+              "id": "a4f68a0a-dd23-43f4-b5ef-103ee1c21421",
               "name": "requests",
               "shortDescription": {
-                "text": "requests 2.6.0 fixes handling of cookies on redirect. Previously a cookie without a h\nost value set would use the hostname for the redirected URL exposing requests users t\no session fixation attacks and potentially cookie stealing."
+                "text": "requests 2.6.0 fixes handling of cookies on redirect. Previously a coo"
               },
               "fullDescription": {
                 "text": "requests 2.6.0 fixes handling of cookies on redirect. Previously a cookie without a host value set would use the ho\nstname for the redirected URL exposing requests users to session fixation attacks and potentially cookie stealing. \nUpdate requests (2.4.0) to a non vulnerable version, vulnerable versions: <2.6.0"
@@ -493,7 +493,7 @@
       },
       "results": [
         {
-          "ruleId": "f42a6bac-430a-4261-87f3-b5c074a8f9a4",
+          "ruleId": "5419aa95-aee9-4e93-bf60-7336e5c4b7ba",
           "ruleIndex": 0,
           "level": "none",
           "message": {
@@ -513,7 +513,7 @@
           ]
         },
         {
-          "ruleId": "06413e5a-b974-46c7-8ea9-b2871065cf50",
+          "ruleId": "fa85ff43-69e9-43cf-9fd1-f18ed1353470",
           "ruleIndex": 1,
           "level": "none",
           "message": {
@@ -533,7 +533,7 @@
           ]
         },
         {
-          "ruleId": "6ceee9dc-57bc-402f-88f1-37e8498ea2b4",
+          "ruleId": "f6437309-1f93-483e-add6-7a41f390d68b",
           "ruleIndex": 2,
           "level": "none",
           "message": {
@@ -553,7 +553,7 @@
           ]
         },
         {
-          "ruleId": "ee93252e-024e-4ee9-a5d8-9ca25d5ecb08",
+          "ruleId": "80db7b15-5fe3-4dab-8012-6fc80fb0ee0f",
           "ruleIndex": 3,
           "level": "none",
           "message": {
@@ -573,7 +573,7 @@
           ]
         },
         {
-          "ruleId": "2db371ff-1941-49f1-baa4-6ff2083b3b42",
+          "ruleId": "89c7b29b-0c4f-4b57-a49a-ac572de81f0c",
           "ruleIndex": 4,
           "level": "none",
           "message": {
@@ -593,7 +593,7 @@
           ]
         },
         {
-          "ruleId": "3dec6045-e10d-4f47-9314-e57a9c57dcf0",
+          "ruleId": "fe724f78-f71f-4c80-9c31-a6b977b38b54",
           "ruleIndex": 5,
           "level": "none",
           "message": {
@@ -613,7 +613,7 @@
           ]
         },
         {
-          "ruleId": "5544d82a-4f58-4b54-bd63-54612c2458b7",
+          "ruleId": "418a0239-f6e3-4234-9f01-afa599a5b5c7",
           "ruleIndex": 6,
           "level": "none",
           "message": {
@@ -633,7 +633,7 @@
           ]
         },
         {
-          "ruleId": "6a4e57e1-a723-478e-a228-577edf423391",
+          "ruleId": "b85b0dd0-f070-40fb-9ecc-9ed811d7cf4b",
           "ruleIndex": 7,
           "level": "none",
           "message": {
@@ -653,7 +653,7 @@
           ]
         },
         {
-          "ruleId": "da3eb148-c7b7-4856-aae0-addb059b71be",
+          "ruleId": "a0d93cf5-841a-43b9-822a-8aa6d660fa16",
           "ruleIndex": 8,
           "level": "none",
           "message": {
@@ -673,7 +673,7 @@
           ]
         },
         {
-          "ruleId": "2dadd43c-358d-4edf-8c5d-8876bac763bd",
+          "ruleId": "9a4f6026-ab7f-4fa3-b12d-1e8697e8dfb2",
           "ruleIndex": 9,
           "level": "none",
           "message": {
@@ -693,7 +693,7 @@
           ]
         },
         {
-          "ruleId": "ea3a502f-a18d-450d-be1e-46bc7e50b178",
+          "ruleId": "f095bc29-9346-437c-a166-bd33b7a0408c",
           "ruleIndex": 10,
           "level": "none",
           "message": {
@@ -713,7 +713,7 @@
           ]
         },
         {
-          "ruleId": "631f9923-b27d-42e5-9c9e-eee9ca3c5454",
+          "ruleId": "1058c5cc-1c1c-4ca3-bbe6-709f4c2e5084",
           "ruleIndex": 11,
           "level": "none",
           "message": {
@@ -733,7 +733,7 @@
           ]
         },
         {
-          "ruleId": "99f4ee5b-31cf-4c90-905d-d44297206fc0",
+          "ruleId": "ccbd0784-7693-4ca4-a416-70244b8c6b6c",
           "ruleIndex": 12,
           "level": "none",
           "message": {
@@ -753,7 +753,7 @@
           ]
         },
         {
-          "ruleId": "60591346-3bbc-4cb6-bc49-b5d005a2ded5",
+          "ruleId": "5801b407-b49b-43fc-98d5-b4ec8a606cdb",
           "ruleIndex": 13,
           "level": "none",
           "message": {
@@ -773,7 +773,7 @@
           ]
         },
         {
-          "ruleId": "2e56e028-a6d8-4cbd-8e8a-1031fd55889f",
+          "ruleId": "72444d68-0493-4e80-bd8c-78b27fd3583f",
           "ruleIndex": 14,
           "level": "none",
           "message": {
@@ -793,7 +793,7 @@
           ]
         },
         {
-          "ruleId": "af3cb752-93ec-4c2e-ac68-f86c3c54ad63",
+          "ruleId": "fe09a351-5b86-4cad-9b39-b269c74f0ade",
           "ruleIndex": 15,
           "level": "none",
           "message": {
@@ -813,7 +813,7 @@
           ]
         },
         {
-          "ruleId": "a6d3fce3-1eab-4f84-80fc-26491e1fc6cf",
+          "ruleId": "ae58b324-c331-4862-979a-96b6ed9c37e7",
           "ruleIndex": 16,
           "level": "none",
           "message": {
@@ -833,7 +833,7 @@
           ]
         },
         {
-          "ruleId": "4f2436f2-c828-423c-8246-1fd93e525d18",
+          "ruleId": "8ec274d3-8fee-4317-9f01-2e7930798e6f",
           "ruleIndex": 17,
           "level": "none",
           "message": {
@@ -853,7 +853,7 @@
           ]
         },
         {
-          "ruleId": "09f30f1f-5b4d-4208-863d-f02d1eaa610c",
+          "ruleId": "0dfb7f52-f5fa-4589-9400-1475c631e0a4",
           "ruleIndex": 18,
           "level": "none",
           "message": {
@@ -873,7 +873,7 @@
           ]
         },
         {
-          "ruleId": "dcf66b85-0975-4857-8157-df06686e29ea",
+          "ruleId": "f3eab9af-7ffc-4977-81fa-37a25e57841e",
           "ruleIndex": 19,
           "level": "none",
           "message": {
@@ -893,7 +893,7 @@
           ]
         },
         {
-          "ruleId": "bce4ed8d-be7e-431a-b1fa-cb20f558a593",
+          "ruleId": "bd8f54e8-0f81-4a38-9beb-df147766953c",
           "ruleIndex": 20,
           "level": "none",
           "message": {
@@ -913,7 +913,7 @@
           ]
         },
         {
-          "ruleId": "7af09845-8b0d-4937-97a5-eb87f34f9281",
+          "ruleId": "0620329f-a9c8-4e38-a935-0b19f132e935",
           "ruleIndex": 21,
           "level": "none",
           "message": {
@@ -933,7 +933,7 @@
           ]
         },
         {
-          "ruleId": "92c25f3f-385d-4525-b910-e0f55bf4cbab",
+          "ruleId": "715aa6b6-7fe1-4fd7-98ed-29dcfd7f452c",
           "ruleIndex": 22,
           "level": "none",
           "message": {
@@ -953,7 +953,7 @@
           ]
         },
         {
-          "ruleId": "08441fda-e111-427f-b555-8b05b376ded9",
+          "ruleId": "a7d417fe-d38a-4c0b-9130-419e8c687133",
           "ruleIndex": 23,
           "level": "none",
           "message": {
@@ -973,7 +973,7 @@
           ]
         },
         {
-          "ruleId": "e706ffee-ea88-4571-b359-9b265ab31e31",
+          "ruleId": "3010ffd3-f215-4d83-b293-c4b096ce2feb",
           "ruleIndex": 24,
           "level": "none",
           "message": {
@@ -993,7 +993,7 @@
           ]
         },
         {
-          "ruleId": "a7a5abe4-fbd2-4f54-8f19-7fe8220d8851",
+          "ruleId": "9b0a2a39-8ea8-48bb-907d-94eff75b6e00",
           "ruleIndex": 25,
           "level": "none",
           "message": {
@@ -1013,7 +1013,7 @@
           ]
         },
         {
-          "ruleId": "4e2bb0ff-9db2-414e-b1a9-8029be6a9d5c",
+          "ruleId": "0fee9f66-749c-47d2-b29a-b61f7914b145",
           "ruleIndex": 26,
           "level": "none",
           "message": {
@@ -1033,7 +1033,7 @@
           ]
         },
         {
-          "ruleId": "2893fc82-0cc9-4f29-8a8f-919a7f167d82",
+          "ruleId": "7abc47d3-1c15-4533-8ae5-c8bbcf9435fa",
           "ruleIndex": 27,
           "level": "none",
           "message": {
@@ -1053,7 +1053,7 @@
           ]
         },
         {
-          "ruleId": "fb31ff78-04c2-46ed-a785-8351cc700c35",
+          "ruleId": "2f96a371-3209-4ffb-b9da-edc58861dfcd",
           "ruleIndex": 28,
           "level": "none",
           "message": {
@@ -1073,7 +1073,7 @@
           ]
         },
         {
-          "ruleId": "9b88b769-d8ec-4e9b-bb2b-657b1fe52321",
+          "ruleId": "d2d8501e-b518-432b-a2d3-1ee7138deea0",
           "ruleIndex": 29,
           "level": "none",
           "message": {
@@ -1093,7 +1093,7 @@
           ]
         },
         {
-          "ruleId": "26958203-41f5-40c6-8d87-d5c54bcba8cc",
+          "ruleId": "cdbe9da6-47c4-4495-986f-cb6bed5665cf",
           "ruleIndex": 30,
           "level": "none",
           "message": {
@@ -1113,7 +1113,7 @@
           ]
         },
         {
-          "ruleId": "30d92870-4fd7-464d-bfa3-7b5dbf031503",
+          "ruleId": "6a52de54-fc82-4d3a-94aa-b7f51cfc9f95",
           "ruleIndex": 31,
           "level": "none",
           "message": {
@@ -1133,7 +1133,7 @@
           ]
         },
         {
-          "ruleId": "bc129450-66e1-4104-afb4-10675b85217b",
+          "ruleId": "a4f68a0a-dd23-43f4-b5ef-103ee1c21421",
           "ruleIndex": 32,
           "level": "none",
           "message": {
@@ -1164,7 +1164,7 @@
           "informationUri": "https://pypi.org/project/piprot/",
           "rules": [
             {
-              "id": "d5486eac-af64-43ec-b130-d6ac3a9ede58",
+              "id": "c92fa5f8-6a23-4552-b55f-6d426981e93c",
               "name": "pytest",
               "shortDescription": {
                 "text": "pytest (6.2.2) is 382 days out of date. Latest is 7.0.1\r"
@@ -1174,7 +1174,7 @@
               }
             },
             {
-              "id": "1f1e8424-df9a-4b71-8ded-f97622ab7842",
+              "id": "628f0f36-6fce-4c27-a7b1-9aaea98c3a8b",
               "name": "requests",
               "shortDescription": {
                 "text": "requests (2.4.0) is 2686 days out of date. Latest is 2.27.1\r"
@@ -1184,7 +1184,7 @@
               }
             },
             {
-              "id": "9f0bc427-97b5-41cb-8451-d3170967d0a6",
+              "id": "696c7cac-9e8c-4c90-a65c-ea47fed22be6",
               "name": "requests",
               "shortDescription": {
                 "text": "requests (2.4.0) is 2686 days out of date. Latest is 2.27.1\r"
@@ -1194,7 +1194,7 @@
               }
             },
             {
-              "id": "e5a364ca-9753-4e01-998e-d61afc386437",
+              "id": "df1199f0-7162-4820-bb8a-0e8e3b055262",
               "name": "black",
               "shortDescription": {
                 "text": "black (20.8b1) is 521 days out of date. Latest is 22.1.0\r"
@@ -1204,7 +1204,7 @@
               }
             },
             {
-              "id": "d12f5a07-2a7a-4e99-b603-8241b75980e8",
+              "id": "5b6525a4-5055-4348-aa72-479f1fbfd261",
               "name": "pytest-snapshot",
               "shortDescription": {
                 "text": "pytest-snapshot (0.5.0) is 385 days out of date. Latest is 0.8.1\r"
@@ -1214,7 +1214,7 @@
               }
             },
             {
-              "id": "75fce561-d7d6-42d3-9eff-4dafbd5fb651",
+              "id": "431a3fee-3983-4705-b906-7f52ab47e549",
               "name": "pytest-snapshot",
               "shortDescription": {
                 "text": "pytest-snapshot (0.5.0) is 385 days out of date. Latest is 0.8.1\r"
@@ -1224,7 +1224,7 @@
               }
             },
             {
-              "id": "4623f439-0637-4b54-8573-e378d98eed2a",
+              "id": "357ed1da-fccc-4ad2-80c3-33485ba67020",
               "name": "pytest",
               "shortDescription": {
                 "text": "pytest (6.2.2) is 382 days out of date. Latest is 7.0.1\r"
@@ -1234,7 +1234,7 @@
               }
             },
             {
-              "id": "17286ed5-745f-4cbf-9c84-6b67e9124d3b",
+              "id": "a8f52314-9904-48bd-a043-f92dbe0f3d17",
               "name": "requests",
               "shortDescription": {
                 "text": "requests (2.4.0) is 2686 days out of date. Latest is 2.27.1\r"
@@ -1244,7 +1244,7 @@
               }
             },
             {
-              "id": "e2a4c675-0196-473e-ab1c-c6ef9472343c",
+              "id": "9d48c342-b340-450c-95fe-8116a9b9bb8a",
               "name": "requests",
               "shortDescription": {
                 "text": "requests (2.4.0) is 2686 days out of date. Latest is 2.27.1\r"
@@ -1254,7 +1254,7 @@
               }
             },
             {
-              "id": "c5e3020e-ec13-4551-991c-9bb3f765bc24",
+              "id": "dfa34f04-bce6-42c2-9613-10d3f2e5488d",
               "name": "black",
               "shortDescription": {
                 "text": "black (20.8b1) is 521 days out of date. Latest is 22.1.0\r"
@@ -1268,7 +1268,7 @@
       },
       "results": [
         {
-          "ruleId": "d5486eac-af64-43ec-b130-d6ac3a9ede58",
+          "ruleId": "c92fa5f8-6a23-4552-b55f-6d426981e93c",
           "ruleIndex": 0,
           "level": "error",
           "message": {
@@ -1288,7 +1288,7 @@
           ]
         },
         {
-          "ruleId": "1f1e8424-df9a-4b71-8ded-f97622ab7842",
+          "ruleId": "628f0f36-6fce-4c27-a7b1-9aaea98c3a8b",
           "ruleIndex": 1,
           "level": "error",
           "message": {
@@ -1308,7 +1308,7 @@
           ]
         },
         {
-          "ruleId": "9f0bc427-97b5-41cb-8451-d3170967d0a6",
+          "ruleId": "696c7cac-9e8c-4c90-a65c-ea47fed22be6",
           "ruleIndex": 2,
           "level": "error",
           "message": {
@@ -1328,7 +1328,7 @@
           ]
         },
         {
-          "ruleId": "e5a364ca-9753-4e01-998e-d61afc386437",
+          "ruleId": "df1199f0-7162-4820-bb8a-0e8e3b055262",
           "ruleIndex": 3,
           "level": "error",
           "message": {
@@ -1348,7 +1348,7 @@
           ]
         },
         {
-          "ruleId": "d12f5a07-2a7a-4e99-b603-8241b75980e8",
+          "ruleId": "5b6525a4-5055-4348-aa72-479f1fbfd261",
           "ruleIndex": 4,
           "level": "error",
           "message": {
@@ -1368,7 +1368,7 @@
           ]
         },
         {
-          "ruleId": "75fce561-d7d6-42d3-9eff-4dafbd5fb651",
+          "ruleId": "431a3fee-3983-4705-b906-7f52ab47e549",
           "ruleIndex": 5,
           "level": "error",
           "message": {
@@ -1388,7 +1388,7 @@
           ]
         },
         {
-          "ruleId": "4623f439-0637-4b54-8573-e378d98eed2a",
+          "ruleId": "357ed1da-fccc-4ad2-80c3-33485ba67020",
           "ruleIndex": 6,
           "level": "error",
           "message": {
@@ -1408,7 +1408,7 @@
           ]
         },
         {
-          "ruleId": "17286ed5-745f-4cbf-9c84-6b67e9124d3b",
+          "ruleId": "a8f52314-9904-48bd-a043-f92dbe0f3d17",
           "ruleIndex": 7,
           "level": "error",
           "message": {
@@ -1428,7 +1428,7 @@
           ]
         },
         {
-          "ruleId": "e2a4c675-0196-473e-ab1c-c6ef9472343c",
+          "ruleId": "9d48c342-b340-450c-95fe-8116a9b9bb8a",
           "ruleIndex": 8,
           "level": "error",
           "message": {
@@ -1448,7 +1448,7 @@
           ]
         },
         {
-          "ruleId": "c5e3020e-ec13-4551-991c-9bb3f765bc24",
+          "ruleId": "dfa34f04-bce6-42c2-9613-10d3f2e5488d",
           "ruleIndex": 9,
           "level": "none",
           "message": {
@@ -1479,200 +1479,200 @@
           "informationUri": "https://cyclonedx.org/",
           "rules": [
             {
-              "id": "c359dade-c183-46b8-b73a-3552f00d4869",
+              "id": "4aca8756-b6f2-4649-b249-5725fb4a68f7",
               "name": "pip",
               "shortDescription": {
-                "text": "A flaw was found in python-pip in the way it handled Unicode separators in git refere\nnces. A remote attacker could possibly use this issue to install a different revision\n on a repository. The highest threat from this vulnerability is to data integrity. Th\nis is fixed in python-pip version 21.1."
+                "text": "A flaw was found in python-pip in the way it handled Unicode separator"
               },
               "fullDescription": {
                 "text": "A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could \npossibly use this issue to install a different revision on a repository. The highest threat from this vulnerability\n is to data integrity. This is fixed in python-pip version 21.1. Update package to non-vulnerable version 21.1"
               }
             },
             {
-              "id": "1ece5a4e-e816-4dfe-9beb-6d299e2674d6",
+              "id": "b71177ef-6dd2-437a-b3c8-22d7538a86c4",
               "name": "pip",
               "shortDescription": {
-                "text": "A flaw was found in python-pip in the way it handled Unicode separators in git refere\nnces. A remote attacker could possibly use this issue to install a different revision\n on a repository. The highest threat from this vulnerability is to data integrity. Th\nis is fixed in python-pip version 21.1."
+                "text": "A flaw was found in python-pip in the way it handled Unicode separator"
               },
               "fullDescription": {
                 "text": "A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could \npossibly use this issue to install a different revision on a repository. The highest threat from this vulnerability\n is to data integrity. This is fixed in python-pip version 21.1. Update package to non-vulnerable version 21.1"
               }
             },
             {
-              "id": "5e7c2a67-f0a8-45a4-88fc-785feb836313",
+              "id": "6f5104d5-103c-4a6a-9b47-97d7b5a81203",
               "name": "pip",
               "shortDescription": {
-                "text": "A flaw was found in python-pip in the way it handled Unicode separators in git refere\nnces. A remote attacker could possibly use this issue to install a different revision\n on a repository. The highest threat from this vulnerability is to data integrity. Th\nis is fixed in python-pip version 21.1."
+                "text": "A flaw was found in python-pip in the way it handled Unicode separator"
               },
               "fullDescription": {
                 "text": "A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could \npossibly use this issue to install a different revision on a repository. The highest threat from this vulnerability\n is to data integrity. This is fixed in python-pip version 21.1. Update package to non-vulnerable version 21.1"
               }
             },
             {
-              "id": "60744f78-48c9-4e8e-87c3-2baf53a3b768",
+              "id": "5c211ea0-b17d-4b16-9fcc-f9fe5bc5fdb7",
               "name": "pip",
               "shortDescription": {
-                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS \nquerying and authenticity checks which allows attackers to perform man-in-the-middle \nattacks."
+                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 use"
               },
               "fullDescription": {
                 "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS querying and authenticity chec\nks which allows attackers to perform man-in-the-middle attacks. Update package to non-vulnerable version 1.5"
               }
             },
             {
-              "id": "39bb0b84-a2e6-4bb9-b643-693d46cdcd2a",
+              "id": "477022ba-2697-4a9e-b04e-6a11f005e5bd",
               "name": "pip",
               "shortDescription": {
-                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS \nquerying and authenticity checks which allows attackers to perform man-in-the-middle \nattacks."
+                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 use"
               },
               "fullDescription": {
                 "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS querying and authenticity chec\nks which allows attackers to perform man-in-the-middle attacks. Update package to non-vulnerable version 1.5"
               }
             },
             {
-              "id": "3222076d-ebf4-4783-980d-8b367e5fc9de",
+              "id": "64f2d28f-dbea-426a-a9c0-33dad979e8fd",
               "name": "pip",
               "shortDescription": {
-                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS \nquerying and authenticity checks which allows attackers to perform man-in-the-middle \nattacks."
+                "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 use"
               },
               "fullDescription": {
                 "text": "The mirroring support (-M, --use-mirrors) in Python Pip before 1.5 uses insecure DNS querying and authenticity chec\nks which allows attackers to perform man-in-the-middle attacks. Update package to non-vulnerable version 1.5"
               }
             },
             {
-              "id": "4c708d9b-4705-4ba4-93d5-40f930a25aa0",
+              "id": "17e5a15e-5241-4e6d-9ce4-56528e04d147",
               "name": "pip",
               "shortDescription": {
-                "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given\n in an install command, because a Content-Disposition header can have ../ in a filena\nme, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs i\nn _download_http_url in _internal/download.py."
+                "text": "The pip package before 19.2 for Python allows Directory Traversal when"
               },
               "fullDescription": {
                 "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, becaus\ne a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized\n_keys file. This occurs in _download_http_url in _internal/download.py. Update package to non-vulnerable version 19\n.2"
               }
             },
             {
-              "id": "ebbb0cca-c2ee-4962-b7c5-582e4795cf60",
+              "id": "7d1d17d5-c41c-45ae-8bf7-7e41da741873",
               "name": "pip",
               "shortDescription": {
-                "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given\n in an install command, because a Content-Disposition header can have ../ in a filena\nme, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs i\nn _download_http_url in _internal/download.py."
+                "text": "The pip package before 19.2 for Python allows Directory Traversal when"
               },
               "fullDescription": {
                 "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, becaus\ne a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized\n_keys file. This occurs in _download_http_url in _internal/download.py. Update package to non-vulnerable version 19\n.2"
               }
             },
             {
-              "id": "d9d798e5-73d7-42d8-9a14-b1198115f829",
+              "id": "57c55eb3-8608-4873-a9a0-ddc0923fedb6",
               "name": "pip",
               "shortDescription": {
-                "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given\n in an install command, because a Content-Disposition header can have ../ in a filena\nme, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs i\nn _download_http_url in _internal/download.py."
+                "text": "The pip package before 19.2 for Python allows Directory Traversal when"
               },
               "fullDescription": {
                 "text": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, becaus\ne a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized\n_keys file. This occurs in _download_http_url in _internal/download.py. Update package to non-vulnerable version 19\n.2"
               }
             },
             {
-              "id": "e6a87384-34e8-4780-b370-8a3ca4017190",
+              "id": "ae595fe3-4e30-44a9-b23b-6fcef92835b1",
               "name": "pip",
               "shortDescription": {
-                "text": "pip 1.3 through 1.5.6 allows local users to cause a denial of service (prevention of \npackage installation) by creating a /tmp/pip-build-* file for another user."
+                "text": "pip 1.3 through 1.5.6 allows local users to cause a denial of service "
               },
               "fullDescription": {
                 "text": "pip 1.3 through 1.5.6 allows local users to cause a denial of service (prevention of package installation) by creat\ning a /tmp/pip-build-* file for another user. Update package to non-vulnerable version 6.0"
               }
             },
             {
-              "id": "af53ec56-6f78-4fbd-9357-7971b1fa3f4d",
+              "id": "caefa7ce-ce5a-4802-ac0d-ad454fbc3ff6",
               "name": "pip",
               "shortDescription": {
-                "text": "pip 1.3 through 1.5.6 allows local users to cause a denial of service (prevention of \npackage installation) by creating a /tmp/pip-build-* file for another user."
+                "text": "pip 1.3 through 1.5.6 allows local users to cause a denial of service "
               },
               "fullDescription": {
                 "text": "pip 1.3 through 1.5.6 allows local users to cause a denial of service (prevention of package installation) by creat\ning a /tmp/pip-build-* file for another user. Update package to non-vulnerable version 6.0"
               }
             },
             {
-              "id": "b7c07ef6-44d2-4a84-bfdc-ae57e4b6fbc4",
+              "id": "9aa91508-13b6-4670-ba6b-9344e2bd2a45",
               "name": "pip",
               "shortDescription": {
-                "text": "pip 1.3 through 1.5.6 allows local users to cause a denial of service (prevention of \npackage installation) by creating a /tmp/pip-build-* file for another user."
+                "text": "pip 1.3 through 1.5.6 allows local users to cause a denial of service "
               },
               "fullDescription": {
                 "text": "pip 1.3 through 1.5.6 allows local users to cause a denial of service (prevention of package installation) by creat\ning a /tmp/pip-build-* file for another user. Update package to non-vulnerable version 6.0"
               }
             },
             {
-              "id": "789f1f43-d910-41a8-b64f-7820f8f84303",
+              "id": "3fb1bda8-f7c8-46c2-923a-861aaf93efef",
               "name": "requests",
               "shortDescription": {
-                "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorization header to a\nn http URI upon receiving a same-hostname https-to-http redirect, which makes it easi\ner for remote attackers to discover credentials by sniffing the network."
+                "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorizat"
               },
               "fullDescription": {
                 "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorization header to an http URI upon receiving a sa\nme-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing \nthe network. Update package to non-vulnerable version 2.20.0"
               }
             },
             {
-              "id": "f9d57984-70a1-46eb-bf67-ca9a29b78b8f",
+              "id": "ada9c455-6a99-46bd-9cd6-964fa7402173",
               "name": "requests",
               "shortDescription": {
-                "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorization header to a\nn http URI upon receiving a same-hostname https-to-http redirect, which makes it easi\ner for remote attackers to discover credentials by sniffing the network."
+                "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorizat"
               },
               "fullDescription": {
                 "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorization header to an http URI upon receiving a sa\nme-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing \nthe network. Update package to non-vulnerable version 2.20.0"
               }
             },
             {
-              "id": "5ca463cb-8286-4f24-a169-8a4b4f66b074",
+              "id": "cac9f5d1-7c34-4add-9860-689c62a30af7",
               "name": "requests",
               "shortDescription": {
-                "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorization header to a\nn http URI upon receiving a same-hostname https-to-http redirect, which makes it easi\ner for remote attackers to discover credentials by sniffing the network."
+                "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorizat"
               },
               "fullDescription": {
                 "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorization header to an http URI upon receiving a sa\nme-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing \nthe network. Update package to non-vulnerable version 2.20.0"
               }
             },
             {
-              "id": "cea72b48-8ae3-482c-90f9-b94ce2ff57c9",
+              "id": "3d87f00c-0ae4-4f12-a24f-8a246b90c468",
               "name": "requests",
               "shortDescription": {
-                "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorization header to a\nn http URI upon receiving a same-hostname https-to-http redirect, which makes it easi\ner for remote attackers to discover credentials by sniffing the network."
+                "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorizat"
               },
               "fullDescription": {
                 "text": "The Requests package before 2.20.0 for Python sends an HTTP Authorization header to an http URI upon receiving a sa\nme-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing \nthe network. Update package to non-vulnerable version 2.20.0"
               }
             },
             {
-              "id": "c9d43a85-efa3-487c-9945-c40b6166eca7",
+              "id": "45f4e742-a4b1-416f-a440-16db0dbbff33",
               "name": "requests",
               "shortDescription": {
-                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows \nremote attackers to conduct session fixation attacks via a cookie without a host valu\ne in a redirect."
+                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 throug"
               },
               "fullDescription": {
                 "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct se\nssion fixation attacks via a cookie without a host value in a redirect. Update package to non-vulnerable version 2.\n6.0"
               }
             },
             {
-              "id": "61b0324b-edd2-4c6b-9c0b-63afccab26f7",
+              "id": "13c8d7c9-7d7c-432c-950f-bc5d95ecb395",
               "name": "requests",
               "shortDescription": {
-                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows \nremote attackers to conduct session fixation attacks via a cookie without a host valu\ne in a redirect."
+                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 throug"
               },
               "fullDescription": {
                 "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct se\nssion fixation attacks via a cookie without a host value in a redirect. Update package to non-vulnerable version 2.\n6.0"
               }
             },
             {
-              "id": "b99c9f4a-60d6-4807-8bc3-7e1814194207",
+              "id": "2692e76b-e6c7-48ed-b706-1d1407b92671",
               "name": "requests",
               "shortDescription": {
-                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows \nremote attackers to conduct session fixation attacks via a cookie without a host valu\ne in a redirect."
+                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 throug"
               },
               "fullDescription": {
                 "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct se\nssion fixation attacks via a cookie without a host value in a redirect. Update package to non-vulnerable version 2.\n6.0"
               }
             },
             {
-              "id": "fc54c9b2-ad61-4de7-8796-69ba78a37af5",
+              "id": "3cb84156-e09b-4439-ba51-b38c763b93dd",
               "name": "requests",
               "shortDescription": {
-                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows \nremote attackers to conduct session fixation attacks via a cookie without a host valu\ne in a redirect."
+                "text": "The resolve_redirects function in sessions.py in requests 2.1.0 throug"
               },
               "fullDescription": {
                 "text": "The resolve_redirects function in sessions.py in requests 2.1.0 through 2.5.3 allows remote attackers to conduct se\nssion fixation attacks via a cookie without a host value in a redirect. Update package to non-vulnerable version 2.\n6.0"
@@ -1683,7 +1683,7 @@
       },
       "results": [
         {
-          "ruleId": "c359dade-c183-46b8-b73a-3552f00d4869",
+          "ruleId": "4aca8756-b6f2-4649-b249-5725fb4a68f7",
           "ruleIndex": 0,
           "level": "error",
           "message": {
@@ -1703,7 +1703,7 @@
           ]
         },
         {
-          "ruleId": "1ece5a4e-e816-4dfe-9beb-6d299e2674d6",
+          "ruleId": "b71177ef-6dd2-437a-b3c8-22d7538a86c4",
           "ruleIndex": 1,
           "level": "error",
           "message": {
@@ -1723,7 +1723,7 @@
           ]
         },
         {
-          "ruleId": "5e7c2a67-f0a8-45a4-88fc-785feb836313",
+          "ruleId": "6f5104d5-103c-4a6a-9b47-97d7b5a81203",
           "ruleIndex": 2,
           "level": "error",
           "message": {
@@ -1743,7 +1743,7 @@
           ]
         },
         {
-          "ruleId": "60744f78-48c9-4e8e-87c3-2baf53a3b768",
+          "ruleId": "5c211ea0-b17d-4b16-9fcc-f9fe5bc5fdb7",
           "ruleIndex": 3,
           "level": "error",
           "message": {
@@ -1763,7 +1763,7 @@
           ]
         },
         {
-          "ruleId": "39bb0b84-a2e6-4bb9-b643-693d46cdcd2a",
+          "ruleId": "477022ba-2697-4a9e-b04e-6a11f005e5bd",
           "ruleIndex": 4,
           "level": "error",
           "message": {
@@ -1783,7 +1783,7 @@
           ]
         },
         {
-          "ruleId": "3222076d-ebf4-4783-980d-8b367e5fc9de",
+          "ruleId": "64f2d28f-dbea-426a-a9c0-33dad979e8fd",
           "ruleIndex": 5,
           "level": "error",
           "message": {
@@ -1803,7 +1803,7 @@
           ]
         },
         {
-          "ruleId": "4c708d9b-4705-4ba4-93d5-40f930a25aa0",
+          "ruleId": "17e5a15e-5241-4e6d-9ce4-56528e04d147",
           "ruleIndex": 6,
           "level": "error",
           "message": {
@@ -1823,7 +1823,7 @@
           ]
         },
         {
-          "ruleId": "ebbb0cca-c2ee-4962-b7c5-582e4795cf60",
+          "ruleId": "7d1d17d5-c41c-45ae-8bf7-7e41da741873",
           "ruleIndex": 7,
           "level": "error",
           "message": {
@@ -1843,7 +1843,7 @@
           ]
         },
         {
-          "ruleId": "d9d798e5-73d7-42d8-9a14-b1198115f829",
+          "ruleId": "57c55eb3-8608-4873-a9a0-ddc0923fedb6",
           "ruleIndex": 8,
           "level": "error",
           "message": {
@@ -1863,7 +1863,7 @@
           ]
         },
         {
-          "ruleId": "e6a87384-34e8-4780-b370-8a3ca4017190",
+          "ruleId": "ae595fe3-4e30-44a9-b23b-6fcef92835b1",
           "ruleIndex": 9,
           "level": "error",
           "message": {
@@ -1883,7 +1883,7 @@
           ]
         },
         {
-          "ruleId": "af53ec56-6f78-4fbd-9357-7971b1fa3f4d",
+          "ruleId": "caefa7ce-ce5a-4802-ac0d-ad454fbc3ff6",
           "ruleIndex": 10,
           "level": "error",
           "message": {
@@ -1903,7 +1903,7 @@
           ]
         },
         {
-          "ruleId": "b7c07ef6-44d2-4a84-bfdc-ae57e4b6fbc4",
+          "ruleId": "9aa91508-13b6-4670-ba6b-9344e2bd2a45",
           "ruleIndex": 11,
           "level": "error",
           "message": {
@@ -1923,7 +1923,7 @@
           ]
         },
         {
-          "ruleId": "789f1f43-d910-41a8-b64f-7820f8f84303",
+          "ruleId": "3fb1bda8-f7c8-46c2-923a-861aaf93efef",
           "ruleIndex": 12,
           "level": "error",
           "message": {
@@ -1943,7 +1943,7 @@
           ]
         },
         {
-          "ruleId": "f9d57984-70a1-46eb-bf67-ca9a29b78b8f",
+          "ruleId": "ada9c455-6a99-46bd-9cd6-964fa7402173",
           "ruleIndex": 13,
           "level": "error",
           "message": {
@@ -1963,7 +1963,7 @@
           ]
         },
         {
-          "ruleId": "5ca463cb-8286-4f24-a169-8a4b4f66b074",
+          "ruleId": "cac9f5d1-7c34-4add-9860-689c62a30af7",
           "ruleIndex": 14,
           "level": "error",
           "message": {
@@ -1983,7 +1983,7 @@
           ]
         },
         {
-          "ruleId": "cea72b48-8ae3-482c-90f9-b94ce2ff57c9",
+          "ruleId": "3d87f00c-0ae4-4f12-a24f-8a246b90c468",
           "ruleIndex": 15,
           "level": "error",
           "message": {
@@ -2003,7 +2003,7 @@
           ]
         },
         {
-          "ruleId": "c9d43a85-efa3-487c-9945-c40b6166eca7",
+          "ruleId": "45f4e742-a4b1-416f-a440-16db0dbbff33",
           "ruleIndex": 16,
           "level": "error",
           "message": {
@@ -2023,7 +2023,7 @@
           ]
         },
         {
-          "ruleId": "61b0324b-edd2-4c6b-9c0b-63afccab26f7",
+          "ruleId": "13c8d7c9-7d7c-432c-950f-bc5d95ecb395",
           "ruleIndex": 17,
           "level": "error",
           "message": {
@@ -2043,7 +2043,7 @@
           ]
         },
         {
-          "ruleId": "b99c9f4a-60d6-4807-8bc3-7e1814194207",
+          "ruleId": "2692e76b-e6c7-48ed-b706-1d1407b92671",
           "ruleIndex": 18,
           "level": "error",
           "message": {
@@ -2063,7 +2063,7 @@
           ]
         },
         {
-          "ruleId": "fc54c9b2-ad61-4de7-8796-69ba78a37af5",
+          "ruleId": "3cb84156-e09b-4439-ba51-b38c763b93dd",
           "ruleIndex": 19,
           "level": "error",
           "message": {
@@ -2094,240 +2094,240 @@
           "informationUri": "https://bandit.readthedocs.io/en/latest/",
           "rules": [
             {
-              "id": "30b9932b-acb7-4488-abac-a11e3bd86527",
+              "id": "20d57390-11a6-435c-b9ef-ec67ee3cc946",
               "name": "subprocess call with shell=True identified, security issue.",
               "shortDescription": {
-                "text": "'subprocess call with shell=True identified, security issue.', in .\\insecure\\src\\supe\nr-insecure-lib.py"
+                "text": "'subprocess call with shell=True identified, security issue.', in .\\in"
               },
               "fullDescription": {
                 "text": "'subprocess call with shell=True identified, security issue.', in .\\insecure\\src\\super-insecure-lib.py Investigate \n'.\\insecure\\src\\super-insecure-lib.py' Line 8 for 'subprocess call with shell=True identified, security issue.' str\nings Full Match: 7 def run_cmd (anything_the_user_types_in:str) -> subprocess.CompletedProcess:\n8     return subpro\ncess.run(anything_the_user_types_in, capture_output=True, universal_newlines=True, shell=True)\n"
               }
             },
             {
-              "id": "5304da81-8905-4e6d-b011-01f246eb76c6",
+              "id": "12b358ff-201d-42af-90af-4fa736e1ad1b",
               "name": "subprocess call with shell=True identified, security issue.",
               "shortDescription": {
-                "text": "'subprocess call with shell=True identified, security issue.', in .\\unpinned-requirem\nents\\src\\super-insecure-lib.py"
+                "text": "'subprocess call with shell=True identified, security issue.', in .\\un"
               },
               "fullDescription": {
                 "text": "'subprocess call with shell=True identified, security issue.', in .\\unpinned-requirements\\src\\super-insecure-lib.py\n Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 8 for 'subprocess call with shell=True identi\nfied, security issue.' strings Full Match: 7 def run_cmd (anything_the_user_types_in:str) -> subprocess.CompletedPr\nocess:\n8     return subprocess.run(anything_the_user_types_in, capture_output=True, universal_newlines=True, shell=\nTrue)\n"
               }
             },
             {
-              "id": "36a59e48-9de1-4ace-b592-93718747a76b",
+              "id": "811fd7a1-f92a-4a05-81cc-6794ca8c521b",
               "name": "Consider possible security implications associated with the subprocess module.",
               "shortDescription": {
-                "text": "'Consider possible security implications associated with the subprocess module.', in \n.\\insecure\\src\\super-insecure-lib.py"
+                "text": "'Consider possible security implications associated with the subproces"
               },
               "fullDescription": {
                 "text": "'Consider possible security implications associated with the subprocess module.', in .\\insecure\\src\\super-insecure-\nlib.py Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 1 for 'Consider possible security implications assoc\niated with the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa \nAAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUw\nYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGF\nqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
               }
             },
             {
-              "id": "4a65d34a-6239-4e1c-840b-686dc2507e54",
+              "id": "2fdb9145-e4cd-4809-b135-9aa89d92bd06",
               "name": "Consider possible security implications associated with the subprocess module.",
               "shortDescription": {
-                "text": "'Consider possible security implications associated with the subprocess module.', in \n.\\unpinned-requirements\\src\\super-insecure-lib.py"
+                "text": "'Consider possible security implications associated with the subproces"
               },
               "fullDescription": {
                 "text": "'Consider possible security implications associated with the subprocess module.', in .\\unpinned-requirements\\src\\su\nper-insecure-lib.py Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 1 for 'Consider possible s\necurity implications associated with the subprocess module.' strings Full Match: 1 import subprocess\n2 \n3 INSECURE_\nSECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarH\njpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTu\nOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n"
               }
             },
             {
-              "id": "70051e2f-c617-4292-ae28-dae50e649ebb",
+              "id": "6291e588-8db3-4ed2-8bee-c4f6bf20ce01",
               "name": "Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'",
               "shortDescription": {
-                "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+\ndLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sU\nsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfblu\noPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'', in .\\insecure\\src\\super-insec\nure-lib.py"
+                "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A"
               },
               "fullDescription": {
                 "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySm\nzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMk\nSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'', in .\\insecure\\src\\super-insecure-l\nib.py Investigate '.\\insecure\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded password: 'ssh-rsa AAAAB3Nz\naC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxO\nkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2I\nt33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strings Full Match: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQ\nAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4\nsouGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qI\nX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hackers.com\"\n"
               }
             },
             {
-              "id": "7fc4d945-b5c8-4143-a7eb-0befc1f94976",
+              "id": "f9252c07-a4a4-4505-82a6-52ccffbf17d2",
               "name": "Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'",
               "shortDescription": {
-                "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+\ndLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sU\nsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfblu\noPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'', in .\\unpinned-requirements\\sr\nc\\super-insecure-lib.py"
+                "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A"
               },
               "fullDescription": {
                 "text": "'Possible hardcoded password: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySm\nzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMk\nSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'', in .\\unpinned-requirements\\src\\sup\ner-insecure-lib.py Investigate '.\\unpinned-requirements\\src\\super-insecure-lib.py' Line 3 for 'Possible hardcoded p\nassword: 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OK\nZ5bcmgkZZ3sRkLJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1c\nfbluoPcxvU2kw0ZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR'' strings Full Match: 2 \n3 INSECURE_SECRET_RSA_KEY = \"ssh-\nrsa AAAAB3NzaC1yc2EAAAABJQAAAQEAp0A7aEqG42y0q22yU+dLFMrlVhnk2C94QChUwZv0pKmEvySmzSGSY2gSMfarHjpKcW8OKZ5bcmgkZZ3sRkL\nJSUwYui/pZxOkUIKZ/sUsFDrW4souGPLfP1ziX/Rj0x+MXj7et/cKO5GwqanXrULssdXapaTz4W+OmMkSpPjtDC2lbfTuOL7lYE1cfbluoPcxvU2kw0\nZIGFqOCFar2It33Xsie1C+//qIX3QWjJAvYF0ZF+OR\"\n4 \n5 INSECURE_URL_WITH_HARDCODED_BASIC_AUTH = \"https://admin:god@hacker\ns.com\"\n"
               }
             },
             {
-              "id": "ca35dc3c-a98a-4e0c-b525-ee25901c953a",
+              "id": "93357b9d-afc4-4f39-8027-b8eb5174b1a6",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_class_setup.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_class_setup.py Investigate '.\\insecure\\tests\\test_class_setup.py' Line 22 for 'Use of assert detected. Th\ne enclosed code will be removed when compiling to optimised byte code.' strings Full Match: 21     def test_sanity(\nself):\n22         assert 1 == 1\n"
               }
             },
             {
-              "id": "e7acb838-254e-4e31-b606-f5d66a8a5a63",
+              "id": "4dd317f2-67d3-4a05-b4ba-610c74047ad7",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 9 for 'Use of assert detected. The enc\nlosed code will be removed when compiling to optimised byte code.' strings Full Match: 8     \"\"\"simple to_arabic_nu\nmber (I) == 1\"\"\"\n9     assert to_arabic_number(\"I\") == 1\n10 \n"
               }
             },
             {
-              "id": "b0cea170-fadf-4d88-8182-8298a44642c4",
+              "id": "9dad8272-e135-43b6-8295-f72f81d49e5e",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 14 for 'Use of assert detected. The en\nclosed code will be removed when compiling to optimised byte code.' strings Full Match: 13     \"\"\"multi to_arabic_n\number (MMVIII) == 2008\"\"\"\n14     assert to_arabic_number(\"MMVIII\") == 2008\n15 \n"
               }
             },
             {
-              "id": "3c41c4ca-1dec-4d15-aadd-bf7e43fbe5c2",
+              "id": "121549a3-2ec7-4346-aa7b-37b7cd8cd3d2",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 19 for 'Use of assert detected. The en\nclosed code will be removed when compiling to optimised byte code.' strings Full Match: 18     \"\"\"simple subtractio\nn to_arabic_number (IV) == 4\"\"\"\n19     assert to_arabic_number(\"IV\") == 4\n20 \n"
               }
             },
             {
-              "id": "97e9c5f5-07a9-44a0-9125-2f69c6a6aec4",
+              "id": "99201801-8c85-4c79-9252-43f5a6ca1956",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 24 for 'Use of assert detected. The en\nclosed code will be removed when compiling to optimised byte code.' strings Full Match: 23     \"\"\"subtraction to_ar\nabic_number (XC) == 90\"\"\"\n24     assert to_arabic_number(\"XC\") == 90\n25 \n"
               }
             },
             {
-              "id": "0d84af7a-71b3-44dd-8c46-4d823f06918b",
+              "id": "9d3a6df3-d58b-4a32-81aa-601a84664197",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 29 for 'Use of assert detected. The en\nclosed code will be removed when compiling to optimised byte code.' strings Full Match: 28     \"\"\"big to_arabic_num\nber (MMMCMXCIX) == 3999\"\"\"\n29     assert to_arabic_number(\"MMMCMXCIX\") == 3999\n30 \n"
               }
             },
             {
-              "id": "ca4d0895-20cd-4bcf-803a-77b85dd2f03a",
+              "id": "9459cde4-ea2f-4bd7-b741-8db96a7be2bf",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 34 for 'Use of assert detected. The en\nclosed code will be removed when compiling to optimised byte code.' strings Full Match: 33     \"\"\"simple to_roman_n\numeral (1) == I\"\"\"\n34     assert to_roman_numeral(1) == \"I\"\n35 \n"
               }
             },
             {
-              "id": "0e5058d7-3e14-4398-9fb9-5b2423de5d4f",
+              "id": "d80097de-fa2f-4ec6-9ba3-19fff803f5cb",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 39 for 'Use of assert detected. The en\nclosed code will be removed when compiling to optimised byte code.' strings Full Match: 38     \"\"\"multi to_roman_nu\nmeral (2008) == MMVIII\"\"\"\n39     assert to_roman_numeral(2008) == \"MMVIII\"\n40 \n"
               }
             },
             {
-              "id": "4d39889e-f45e-4a6a-8f23-79e84ef2d410",
+              "id": "50cd4a6d-7408-4b63-a3f3-6c404e53fede",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 44 for 'Use of assert detected. The en\nclosed code will be removed when compiling to optimised byte code.' strings Full Match: 43     \"\"\"simple subtractio\nn to_roman_numeral (4) == IV\"\"\"\n44     assert to_roman_numeral(4) == \"IV\"\n45 \n"
               }
             },
             {
-              "id": "dba13370-2634-4d18-8f91-bf2416b29f6c",
+              "id": "a6997601-c879-44dc-813c-dd6ecf37c088",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 49 for 'Use of assert detected. The en\nclosed code will be removed when compiling to optimised byte code.' strings Full Match: 48     \"\"\"subtraction to_ro\nman_numeral (90) == XC\"\"\"\n49     assert to_roman_numeral(90) == \"XC\"\n50 \n"
               }
             },
             {
-              "id": "353d5afd-7676-4230-af7b-1b61a9723014",
+              "id": "5a536462-b5dd-4958-bf90-3e0ea9ffb4b9",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 54 for 'Use of assert detected. The en\nclosed code will be removed when compiling to optimised byte code.' strings Full Match: 53     \"\"\"big to_roman_nume\nral (3999) == MMMCMXCIX\"\"\"\n54     assert to_roman_numeral(3999) == \"MMMCMXCIX\"\n55 \n"
               }
             },
             {
-              "id": "ed113fc3-2e10-43f1-8320-83433c007b40",
+              "id": "5a76f7f0-5ead-430e-804b-36c030956b0e",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 59 for 'Use of assert detected. The en\nclosed code will be removed when compiling to optimised byte code.' strings Full Match: 58     \"\"\"zero fractions to\n_arabic_number (nulla) == 0\"\"\"\n59     assert to_arabic_number(\"nulla\") == 0\n60 \n"
               }
             },
             {
-              "id": "64968005-e5d2-4343-93c8-09755dbb15af",
+              "id": "cb3c075b-6881-4afe-a4fe-98f81067603f",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_converter.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_converter.py Investigate '.\\insecure\\tests\\test_converter.py' Line 64 for 'Use of assert detected. The en\nclosed code will be removed when compiling to optimised byte code.' strings Full Match: 63     \"\"\"zero fractions to\n_roman_numeral (0) == nulla\"\"\"\n64     assert to_roman_numeral(0) == \"nulla\"\n"
               }
             },
             {
-              "id": "920b52ad-7f49-4b4c-b266-41ca376ba81e",
+              "id": "22d1e421-8cae-4c7b-a76c-b0e3f843b4d7",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_given_when_then.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_given_when_then.py Investigate '.\\insecure\\tests\\test_given_when_then.py' Line 9 for 'Use of assert detec\nted. The enclosed code will be removed when compiling to optimised byte code.' strings Full Match: 8     # Then\n9  \n   assert output == expected_output\n10 \n"
               }
             },
             {
-              "id": "5cc11a83-5ec2-4878-8d9f-0d527273c9f1",
+              "id": "33ff6428-add3-426e-9273-177e13ba4dc8",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_given_when_then.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_given_when_then.py Investigate '.\\insecure\\tests\\test_given_when_then.py' Line 19 for 'Use of assert dete\ncted. The enclosed code will be removed when compiling to optimised byte code.' strings Full Match: 18     # Then\n1\n9     assert output == expected_output\n"
               }
             },
             {
-              "id": "ca694a59-e3fe-4885-8694-b6ea51a0cf81",
+              "id": "2c26b68f-b62e-4a24-b6ff-dcc91113fb8c",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_mocking.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_mocking.py Investigate '.\\insecure\\tests\\test_mocking.py' Line 13 for 'Use of assert detected. The enclos\ned code will be removed when compiling to optimised byte code.' strings Full Match: 12     output = some_func()\n13 \n    assert output == expected_output\n14 \n"
               }
             },
             {
-              "id": "26e398df-7cfb-4ec7-9222-359dec56f6ad",
+              "id": "0fe2be3f-c92b-4ae8-8b7e-4d8f9c0cf9cb",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\insecure\\tests\\test_module_setup.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\insecure\\t\nests\\test_module_setup.py Investigate '.\\insecure\\tests\\test_module_setup.py' Line 9 for 'Use of assert detected. T\nhe enclosed code will be removed when compiling to optimised byte code.' strings Full Match: 8 def test_sanity():\n9\n     assert 1 == 1\n10 \n"
               }
             },
             {
-              "id": "7fdc746f-b87b-4102-b0ab-657772348bc4",
+              "id": "6fa07e17-b4f7-4cbb-86dc-91c5dff9d652",
               "name": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
               "shortDescription": {
-                "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimise\nd byte code.', in .\\python-autorunested-poetry\\tests\\test_poetry_demo.py"
+                "text": "'Use of assert detected. The enclosed code will be removed when compil"
               },
               "fullDescription": {
                 "text": "'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.', in .\\python-aut\norunested-poetry\\tests\\test_poetry_demo.py Investigate '.\\python-autorunested-poetry\\tests\\test_poetry_demo.py' Lin\ne 5 for 'Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.' strings \nFull Match: 4 def test_version():\n5     assert __version__ == '0.1.0'\n"
@@ -2338,7 +2338,7 @@
       },
       "results": [
         {
-          "ruleId": "30b9932b-acb7-4488-abac-a11e3bd86527",
+          "ruleId": "20d57390-11a6-435c-b9ef-ec67ee3cc946",
           "ruleIndex": 0,
           "level": "error",
           "message": {
@@ -2358,7 +2358,7 @@
           ]
         },
         {
-          "ruleId": "5304da81-8905-4e6d-b011-01f246eb76c6",
+          "ruleId": "12b358ff-201d-42af-90af-4fa736e1ad1b",
           "ruleIndex": 1,
           "level": "error",
           "message": {
@@ -2378,7 +2378,7 @@
           ]
         },
         {
-          "ruleId": "36a59e48-9de1-4ace-b592-93718747a76b",
+          "ruleId": "811fd7a1-f92a-4a05-81cc-6794ca8c521b",
           "ruleIndex": 2,
           "level": "warning",
           "message": {
@@ -2398,7 +2398,7 @@
           ]
         },
         {
-          "ruleId": "4a65d34a-6239-4e1c-840b-686dc2507e54",
+          "ruleId": "2fdb9145-e4cd-4809-b135-9aa89d92bd06",
           "ruleIndex": 3,
           "level": "warning",
           "message": {
@@ -2418,7 +2418,7 @@
           ]
         },
         {
-          "ruleId": "70051e2f-c617-4292-ae28-dae50e649ebb",
+          "ruleId": "6291e588-8db3-4ed2-8bee-c4f6bf20ce01",
           "ruleIndex": 4,
           "level": "warning",
           "message": {
@@ -2438,7 +2438,7 @@
           ]
         },
         {
-          "ruleId": "7fc4d945-b5c8-4143-a7eb-0befc1f94976",
+          "ruleId": "f9252c07-a4a4-4505-82a6-52ccffbf17d2",
           "ruleIndex": 5,
           "level": "warning",
           "message": {
@@ -2458,7 +2458,7 @@
           ]
         },
         {
-          "ruleId": "ca35dc3c-a98a-4e0c-b525-ee25901c953a",
+          "ruleId": "93357b9d-afc4-4f39-8027-b8eb5174b1a6",
           "ruleIndex": 6,
           "level": "warning",
           "message": {
@@ -2478,7 +2478,7 @@
           ]
         },
         {
-          "ruleId": "e7acb838-254e-4e31-b606-f5d66a8a5a63",
+          "ruleId": "4dd317f2-67d3-4a05-b4ba-610c74047ad7",
           "ruleIndex": 7,
           "level": "warning",
           "message": {
@@ -2498,7 +2498,7 @@
           ]
         },
         {
-          "ruleId": "b0cea170-fadf-4d88-8182-8298a44642c4",
+          "ruleId": "9dad8272-e135-43b6-8295-f72f81d49e5e",
           "ruleIndex": 8,
           "level": "warning",
           "message": {
@@ -2518,7 +2518,7 @@
           ]
         },
         {
-          "ruleId": "3c41c4ca-1dec-4d15-aadd-bf7e43fbe5c2",
+          "ruleId": "121549a3-2ec7-4346-aa7b-37b7cd8cd3d2",
           "ruleIndex": 9,
           "level": "warning",
           "message": {
@@ -2538,7 +2538,7 @@
           ]
         },
         {
-          "ruleId": "97e9c5f5-07a9-44a0-9125-2f69c6a6aec4",
+          "ruleId": "99201801-8c85-4c79-9252-43f5a6ca1956",
           "ruleIndex": 10,
           "level": "warning",
           "message": {
@@ -2558,7 +2558,7 @@
           ]
         },
         {
-          "ruleId": "0d84af7a-71b3-44dd-8c46-4d823f06918b",
+          "ruleId": "9d3a6df3-d58b-4a32-81aa-601a84664197",
           "ruleIndex": 11,
           "level": "warning",
           "message": {
@@ -2578,7 +2578,7 @@
           ]
         },
         {
-          "ruleId": "ca4d0895-20cd-4bcf-803a-77b85dd2f03a",
+          "ruleId": "9459cde4-ea2f-4bd7-b741-8db96a7be2bf",
           "ruleIndex": 12,
           "level": "warning",
           "message": {
@@ -2598,7 +2598,7 @@
           ]
         },
         {
-          "ruleId": "0e5058d7-3e14-4398-9fb9-5b2423de5d4f",
+          "ruleId": "d80097de-fa2f-4ec6-9ba3-19fff803f5cb",
           "ruleIndex": 13,
           "level": "warning",
           "message": {
@@ -2618,7 +2618,7 @@
           ]
         },
         {
-          "ruleId": "4d39889e-f45e-4a6a-8f23-79e84ef2d410",
+          "ruleId": "50cd4a6d-7408-4b63-a3f3-6c404e53fede",
           "ruleIndex": 14,
           "level": "warning",
           "message": {
@@ -2638,7 +2638,7 @@
           ]
         },
         {
-          "ruleId": "dba13370-2634-4d18-8f91-bf2416b29f6c",
+          "ruleId": "a6997601-c879-44dc-813c-dd6ecf37c088",
           "ruleIndex": 15,
           "level": "warning",
           "message": {
@@ -2658,7 +2658,7 @@
           ]
         },
         {
-          "ruleId": "353d5afd-7676-4230-af7b-1b61a9723014",
+          "ruleId": "5a536462-b5dd-4958-bf90-3e0ea9ffb4b9",
           "ruleIndex": 16,
           "level": "warning",
           "message": {
@@ -2678,7 +2678,7 @@
           ]
         },
         {
-          "ruleId": "ed113fc3-2e10-43f1-8320-83433c007b40",
+          "ruleId": "5a76f7f0-5ead-430e-804b-36c030956b0e",
           "ruleIndex": 17,
           "level": "warning",
           "message": {
@@ -2698,7 +2698,7 @@
           ]
         },
         {
-          "ruleId": "64968005-e5d2-4343-93c8-09755dbb15af",
+          "ruleId": "cb3c075b-6881-4afe-a4fe-98f81067603f",
           "ruleIndex": 18,
           "level": "warning",
           "message": {
@@ -2718,7 +2718,7 @@
           ]
         },
         {
-          "ruleId": "920b52ad-7f49-4b4c-b266-41ca376ba81e",
+          "ruleId": "22d1e421-8cae-4c7b-a76c-b0e3f843b4d7",
           "ruleIndex": 19,
           "level": "warning",
           "message": {
@@ -2738,7 +2738,7 @@
           ]
         },
         {
-          "ruleId": "5cc11a83-5ec2-4878-8d9f-0d527273c9f1",
+          "ruleId": "33ff6428-add3-426e-9273-177e13ba4dc8",
           "ruleIndex": 20,
           "level": "warning",
           "message": {
@@ -2758,7 +2758,7 @@
           ]
         },
         {
-          "ruleId": "ca694a59-e3fe-4885-8694-b6ea51a0cf81",
+          "ruleId": "2c26b68f-b62e-4a24-b6ff-dcc91113fb8c",
           "ruleIndex": 21,
           "level": "warning",
           "message": {
@@ -2778,7 +2778,7 @@
           ]
         },
         {
-          "ruleId": "26e398df-7cfb-4ec7-9222-359dec56f6ad",
+          "ruleId": "0fe2be3f-c92b-4ae8-8b7e-4d8f9c0cf9cb",
           "ruleIndex": 22,
           "level": "warning",
           "message": {
@@ -2798,7 +2798,7 @@
           ]
         },
         {
-          "ruleId": "7fdc746f-b87b-4102-b0ab-657772348bc4",
+          "ruleId": "6fa07e17-b4f7-4cbb-86dc-91c5dff9d652",
           "ruleIndex": 23,
           "level": "warning",
           "message": {
